@@ -93,7 +93,6 @@
     line-height: 29px;
     color: #000000;
     flex: none;
-    order: 0;
     flex-grow: 0;
   }
   #form_authorization {
@@ -106,7 +105,6 @@
     border: 1px solid #E3E5E6;
     border-radius: 8px;
     flex: none;
-    order: 1;
     flex-grow: 0;
     font-family: "Inter", serif;
     font-style: normal;
@@ -122,7 +120,6 @@
     background: #ED6F2D;
     border-radius: 48px;
     flex: none;
-    order: 1;
     flex-grow: 0;
     border: none;
     color: white;
@@ -161,7 +158,6 @@
     height: 60px;
     background: #FFFFFF;
     border-radius: 15px;
-    order: 0;
     flex-grow: 0;
     padding: 15px;
   }
@@ -170,7 +166,6 @@
     height: 60px;
     background: #ffffff;
     border-radius: 15px;
-    order: 0;
     flex-grow: 0;
     padding: 15px;
     position: relative;
@@ -190,7 +185,6 @@
     position: absolute;
     background: #ffffff;
     border-radius: 15px;
-    order: 0;
     flex-grow: 0;
     width: 175px;
     height: 60px;
@@ -216,7 +210,6 @@
     height: 60px;
     background: #FFFFFF;
     border-radius: 15px;
-    order: 0;
     flex-grow: 0;
     padding: 18px;
     position: absolute;
@@ -352,7 +345,6 @@
     row-gap: 60px;
     left: 113px;
     position: relative;
-    width: 1280px;
     margin-top: 295px;
     padding: 0 40px 0 40px;
   }
@@ -440,6 +432,100 @@
     color: #FFFFFF;
     cursor: pointer;
     margin: 30px 0 0 -93px;
+  }
+  .bottom_line {
+    margin: 75px 150px 38px 150px;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 2px solid #ffffff;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer_docs_btn {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 20px;
+    flex-grow: 0;
+    width: 184px;
+    height: 64px;
+    border: #ffffff solid 1px;
+    left: 154px;
+    padding: 5px 0 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .footer_docs_btn:hover {
+    border: #ED6F2D solid 1px;
+  }
+  .footer_docs_btn_img {
+    left: 15px;
+  }
+  .footer_docs_btn_txt {
+    margin-left: 15px;
+  }
+  .footer_rules_btn {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 20px;
+    flex-grow: 0;
+    width: 184px;
+    height: 64px;
+    border: #ffffff solid 1px;
+    right: 243px;
+    padding: 5px 0 0 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .footer_rules_btn:hover {
+    border: #ED6F2D solid 1px;
+  }
+  .footer_rules_btn_img {
+    margin-left: 11px;
+  }
+  .footer_rules_btn_txt {
+    margin-left: 15px;
+  }
+  .QAStudio {
+    width: 115px;
+    height: 29px;
+    display: flex;
+    margin: 18px 91px 0 0;
+    column-gap: 7px;
+  }
+  .QA {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ED6F2D;
+  }
+  .Studio {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
   }
   .power4 {
     color: #45D221;
