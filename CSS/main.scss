@@ -17,10 +17,26 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ED6F2D;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+
 .parent {
   position: relative;
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
   margin: 0 auto;
   //overflow: hidden;
 }
@@ -411,10 +427,6 @@
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 40px;
   }
-  //.
-  //.parent__mainblock_card_parameters_badge
-
-  //.parent__mainblock_card_pokemon_id_copy
 
   .parent__mainblock_card_img{
     position: absolute;
@@ -465,6 +477,23 @@
     color: #222222;
   }
 
+  .parent__mainblock_load_more{
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 30px;
+    gap: 10px;
+    left: 551px;
+    right: 551px;
+    top: 641px;
+    background: #ED6F2D;
+    border-radius: 48px;
+    width: 178px;
+    height: 48px;
+  }
+
+
+
   .power4{
     color: #45D221;
     border: 1px solid #45D221;
@@ -479,7 +508,15 @@
     border: 1px solid #ED2D2D;
   }
 
+  .disabled_card{
+    color: #607D8B;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%)
+  }
 
+  .disabled_card_border{
+    border: 1px solid #607D8B;
+  }
 
 
 
