@@ -22,7 +22,7 @@
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 /* Desktop */
@@ -39,7 +39,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px blue;
   }
   .parent__block1_logo {
     position: absolute;
@@ -145,9 +144,9 @@
 
 
   .gradient_background {
-    position: absolute;
+    position: fixed;
     width: 1335px;
-    height: 1068px;
+    height: 100vh;
     top: 250px;
     background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
     filter: blur(200px);
@@ -364,7 +363,7 @@
     top: 253px;
 
     background: #FFFFFF;
-    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
 
     -webkit-font-smoothing: antialiased;
@@ -385,6 +384,104 @@
     height: 48px;
     background-repeat: no-repeat;
     background-position: center;
-
   }
+
+  .parent__mainblock{
+    display: grid;
+    grid-template-columns: repeat(4, 288px);
+    column-gap: 16px;
+    row-gap: 60px;
+    left: 113px;
+    position: absolute;
+    width: 1280px;
+    margin-top: 295px;
+    padding: 0 40px 0 40px;
+  }
+
+  .parent__mainblock_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 24px;
+    gap: 30px;
+    width: 288px;
+    height: 315px;
+    background: #ffffff;
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 40px;
+  }
+  //.
+  //.parent__mainblock_card_parameters_badge
+
+  //.parent__mainblock_card_pokemon_id_copy
+
+  .parent__mainblock_card_img{
+    position: absolute;
+    width: 229px;
+    height: 188px;
+    left: 0.5px;
+    top: -38px;
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+  }
+  .parent__mainblock_card_name{
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    position: absolute;
+    top: 170px;
+  }
+  .parent__mainblock_card_parameters{
+    display: flex;
+    position: absolute;
+    top: 214px;
+    column-gap: 11px;
+  }
+  .parent__mainblock_card_parameters_power{
+    border-radius: 20px;
+    width: 76px;
+    height: 33px;
+    padding: 7px 0 0 0;
+    text-align: center;
+  }
+
+  .parent__mainblock_card_pokemon_id{
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    top: 271px;
+  }
+  .parent__mainblock_card_pokemon_id_number{
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  .power4{
+    color: #45D221;
+    border: 1px solid #45D221;
+  }
+
+  .power10{
+    color: #BB2DED;
+    border: 1px solid #BB2DED;
+  }
+  .power16{
+    color: #ED2D2D;
+    border: 1px solid #ED2D2D;
+  }
+
+
+
+
+
+
 }
