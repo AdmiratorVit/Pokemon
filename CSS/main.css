@@ -27,16 +27,9 @@
   background-color: #ffffff;
 }
 
-.parent {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .parent {
-    display: flex;
     justify-content: center;
   }
   .parent__block1 {
@@ -156,6 +149,7 @@
     top: 40px;
     z-index: 50;
     flex-direction: column;
+    margin-left: 152px;
   }
   .top_menu {
     width: 100%;
@@ -351,12 +345,13 @@
     background-position: center;
   }
   .parent__mainblock {
+    width: 1280px;
     display: grid;
     grid-template-columns: repeat(4, 288px);
     column-gap: 16px;
     row-gap: 60px;
     left: 113px;
-    position: absolute;
+    position: relative;
     width: 1280px;
     margin-top: 295px;
     padding: 0 40px 0 40px;
@@ -421,18 +416,30 @@
     line-height: 19px;
     color: #222222;
   }
+  .parent__mainblock_card_pokemon_id_copy {
+    cursor: pointer;
+  }
   .parent__mainblock_load_more {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 30px;
-    gap: 10px;
-    left: 551px;
-    right: 551px;
-    top: 641px;
-    background: #ED6F2D;
-    border-radius: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .parent__mainblock_load_more_button {
     width: 178px;
     height: 48px;
+    background: #ED6F2D;
+    border-radius: 48px;
+    border: #ED6F2D 1px solid;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 30px 0 0 -93px;
   }
   .power4 {
     color: #45D221;
@@ -453,6 +460,10 @@
   }
   .disabled_card_border {
     border: 1px solid #607D8B;
+  }
+  .disabled_card_base {
+    backdrop-filter: blur(50px);
+    opacity: 0.6;
   }
 }
 
