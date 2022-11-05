@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <div class="parent">
     <header class="header">
         <div class="top_menu">
@@ -28,15 +27,43 @@
                     <div class="top_menu_pokemons_btn_txt">Тренеры</div>
                 </a>
             </div>
-            <div class="top_menu_id"></div>
-            <div class="top_menu_exit"></div>
+            <div class="top_menu_id">
+                <span class="id_txt">ID</span>
+                <span class="id_number">92312421</span>
+            </div>
+            <div class="top_menu_exit">
+                <a href="#" class="top_menu_exit_btn">
+                    <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
+                </a>
+            </div>
         </div>
-        <div class="sub_menu"></div>
+        <div class="sub_menu">
+            <div class="sub_menu_title">Покемоны</div>
+            <div class="sub_menu_search">
+                <input id="search" type="search" name="search" required placeholder="Поиск">
+                <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
+            </div>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#">
+                        <h6>features</h6>
+                    </a></li>
+                    <li><a href="#">
+                        <h6>works</h6>
+                    </a></li>
+                </ul>
+            </div>
+
+
+        </div>
 
     </header>
 
     <div class="parent__block1">
-        <div class="parent__block1_title">Битва Покемонов</div>
         <div class="parent__block1_form">
             <form id="form_authorization" action="#" method="post">
             <span class="parent__block1_form_title">Добро пожаловать</span>
