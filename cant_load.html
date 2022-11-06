@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cant load</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/trainers.css">
+    <link rel="stylesheet" href="./CSS/filter.css">
+    <link rel="stylesheet" href="./CSS/sorting_power.css">
+    <link rel="stylesheet" href="./CSS/not_found.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="parent">
+    <header class="header">
+        <div class="top_menu">
+            <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
+            <div class="top_menu_pokemons">
+                <a href="pokemons.html" class="top_menu_pokemons_btn">
+                    <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
+                    <div class="top_menu_pokemons_btn_txt">Покемоны</div>
+                </a>
+            </div>
+            <div class="top_menu_pokemons">
+                <a href="trainers.html" class="top_menu_pokemons_btn">
+                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
+                    <div class="top_menu_pokemons_btn_txt">Тренеры</div>
+                </a>
+            </div>
+            <div class="top_menu_id">
+                <span class="id_txt">ID</span>
+                <span class="id_number">92312421</span>
+            </div>
+            <div class="top_menu_exit">
+                <a href="#" class="top_menu_exit_btn">
+                    <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
+                </a>
+            </div>
+        </div>
+        <div class="sub_menu">
+            <div class="sub_menu_title">Покемоны</div>
+
+            <div id="menuToggle__sorting_power">По убыванию силы
+                <input type="checkbox"/>
+                <figure class="checkbox_power_figure"></figure>
+
+                <div id="sorting_power">
+                    <div class="sorting_power_title">Сортировка</div>
+                    <form action="#">
+                        <div class="radio-group">
+                            <ul class="sorting_power__items">
+                                <li>
+                                    <label for="desc">По возрастанию силы</label><input type="radio" id="desc"
+                                                                                        name="selector" checked>
+                                </li>
+                                <li>
+                                    <label for="asc">По убыванию силы</label><input type="radio" id="asc"
+                                                                                    name="selector">
+                                </li>
+                                <li>
+                                    <label for="abc">По алфавиту</label>
+                                    <input type="radio" id="abc" name="selector">
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sub_menu_search">
+                <input id="search" type="search" name="search" required placeholder="Поиск"/>
+                <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
+            </div>
+            <div id="menuToggle">
+                <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
+                <input type="checkbox"/>
+                <figure class="checkbox_figure"></figure>
+                <div id="filter_power">
+                    <div class="filter_power_title">Фильтры</div>
+                    <form action="#">
+                        <div>
+                            <ul class="filter_power__items">
+                                <li>
+                                    <div class="inputGroup">
+                                        <input class="in" id="option1" name="selector" type="checkbox" checked/>
+                                        <label for="option1">1</label>
+                                    </div>
+
+                                    <div class="inputGroup">
+                                        <input class="in" id="option2" name="selector" type="checkbox" checked/>
+                                        <label for="option2">2</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input class="in" id="option3" name="selector" type="checkbox" checked/>
+                                        <label for="option3">3</label>
+                                    </div>
+
+                                    <div class="inputGroup">
+                                        <input class="in" id="option4" name="selector" type="checkbox" checked/>
+                                        <label for="option4">4</label>
+                                    </div>
+                                    <div class="inputGroup">
+                                        <input class="in" id="option5" name="selector" type="checkbox" checked/>
+                                        <label for="option5">5</label>
+                                    </div>
+
+                                    <div class="inputGroup">
+                                        <input class="in" id="option6" name="selector" type="checkbox" checked>
+                                        <label for="option6">6+</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="mainblock">
+
+        <div class="not_found_trainer__img">
+            <img src="img/Frame%20109.svg">
+        </div>
+        <div class="not_found_trainer__txt">Не удалось загрузить данные</div>
+        <div class="not_found_trainer__txt2">Попробуйте зайти через несколько минут или обновите страницу</div>
+
+
+    </div>
+
+
+    <div class="gradient_background"></div>
+</div>
+</body>
+</html>
