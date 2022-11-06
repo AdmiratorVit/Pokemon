@@ -142,7 +142,7 @@
   }
   .header {
     width: 1280px;
-    position: fixed;
+    position: relative;
     display: flex;
     top: 40px;
     z-index: 50;
@@ -285,7 +285,7 @@
     top: 14px;
     left: 13px;
   }
-  /*Меню фильтра*/
+  /*Меню фильтра ПРАВОЕ*/
   #menuToggle {
     display: flex;
     flex-direction: row;
@@ -299,7 +299,8 @@
     justify-content: center;
     margin-left: 7px;
   }
-  #menuToggle input {
+  /*Меню фильтра ПРАВОЕ чекбокс*/
+  #menuToggle > input {
     display: flex;
     width: 40px;
     height: 32px;
@@ -308,27 +309,8 @@
     opacity: 0;
     z-index: 2;
   }
-  #menu {
+  #menuToggle input:checked ~ #filter_power {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    position: absolute;
-    width: 288px;
-    height: 309px;
-    left: 952px;
-    top: 253px;
-    background: #FFFFFF;
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0 0;
-    transform: translate(600px, -37px);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  #menuToggle input:checked ~ #menu {
-    transform: translate(-39px, -37px);
-    background: #FFFFFF;
   }
   .menuToggle_badge {
     width: 18px;
@@ -356,36 +338,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .menu_title {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 100%;
-    color: #222222;
-  }
-  .filter_radio {
-    width: 51px;
-    height: 31px;
-    left: calc(50% - 25.5px);
-    top: calc(50% - 15.5px + 0px);
-    background: rgba(120, 120, 128, 0.16);
-  }
-  .filter_label {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    color: #222222;
-  }
   /*конец меню фильтра*/
-  /* меню силы*/
-  #menuToggle_power {
+  /* меню силы (левое)*/
+  #menuToggle__sorting_power {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 0px 12px 14px;
+    padding: 12px 0 12px 14px;
     width: 213px;
     height: 48px;
     background: #FFFFFF;
@@ -398,7 +357,7 @@
     line-height: 16px;
     color: #090A0A;
   }
-  #menuToggle_power input {
+  #menuToggle__sorting_power > input {
     display: flex;
     margin-left: 148px;
     width: 50px;
@@ -408,27 +367,12 @@
     opacity: 0;
     z-index: 2;
   }
-  #menu_power {
+  /* меню силы (левое). Чекбокс*/
+  #menuToggle__sorting_power input:checked ~ #sorting_power {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    position: absolute;
-    width: 288px;
-    height: 309px;
-    left: 952px;
-    top: 253px;
-    background: #FFFFFF;
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0 0;
-    transform: translate(600px, -37px);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  #menuToggle_power input:checked ~ #menu {
-    transform: translate(-39px, -37px);
-    background: #FFFFFF;
+  #menuToggle__sorting_power input:checked ~ .checkbox_power_figure {
+    transform: rotate(180deg);
   }
   .checkbox_power_figure {
     background-image: url(../img/Vector.svg);
@@ -462,7 +406,7 @@
     row-gap: 60px;
     left: 113px;
     position: relative;
-    margin-top: 295px;
+    margin-top: 109px;
     padding: 0 40px 0 40px;
   }
   .parent__mainblock_card {
@@ -645,15 +589,15 @@
     line-height: 29px;
     color: #222222;
   }
-  .power4 {
+  .power1 {
     color: #45D221;
     border: 1px solid #45D221;
   }
-  .power10 {
+  .power2 {
     color: #BB2DED;
     border: 1px solid #BB2DED;
   }
-  .power16 {
+  .power3plus {
     color: #ED2D2D;
     border: 1px solid #ED2D2D;
   }
@@ -668,41 +612,6 @@
   .disabled_card_base {
     backdrop-filter: blur(50px);
     opacity: 0.6;
-  }
-  input[type=radio] {
-    position: absolute;
-    visibility: hidden;
-    display: none;
-  }
-  label {
-    color: #9a929e;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 5px 20px;
-  }
-  input[type=radio]:checked + label {
-    color: #ccc8ce;
-    background: #675f6b;
-  }
-  label + input[type=radio] + label {
-    border-left: solid 3px #675f6b;
-  }
-  .radio-group {
-    margin: 20px;
-    overflow: hidden;
-    width: 236px;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 2px;
-    background: rgba(118, 118, 128, 0.12);
-    border-radius: 8px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
   }
 }
 

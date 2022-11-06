@@ -142,7 +142,7 @@
   }
   .header {
     width: 1280px;
-    position: fixed;
+    position: relative;
     display: flex;
     top: 40px;
     z-index: 50;
@@ -309,7 +309,7 @@
     z-index: 2;
   }
   #menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -323,12 +323,10 @@
     border-radius: 30px;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 0;
-    transform: translate(600px, -37px);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transform: translate(-39px, -37px);
   }
   #menuToggle input:checked ~ #menu {
-    transform: translate(-39px, -37px);
-    background: #FFFFFF;
+    display: flex;
   }
   .menuToggle_badge {
     width: 18px;
@@ -381,7 +379,7 @@
   }
   /*конец меню фильтра*/
   /* меню силы*/
-  #menuToggle_power {
+  #menuToggle__sorting_power {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -398,7 +396,7 @@
     line-height: 16px;
     color: #090A0A;
   }
-  #menuToggle_power input {
+  #menuToggle__sorting_power input {
     display: flex;
     margin-left: 148px;
     width: 50px;
@@ -426,7 +424,7 @@
     transform: translate(600px, -37px);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  #menuToggle_power input:checked ~ #menu {
+  #menuToggle__sorting_power input:checked ~ #menu {
     transform: translate(-39px, -37px);
     background: #FFFFFF;
   }
@@ -462,7 +460,7 @@
     row-gap: 60px;
     left: 113px;
     position: relative;
-    margin-top: 295px;
+    margin-top: 109px;
     padding: 0 40px 0 40px;
   }
   .parent__mainblock_card {
@@ -668,41 +666,6 @@
   .disabled_card_base {
     backdrop-filter: blur(50px);
     opacity: 0.6;
-  }
-  input[type=radio] {
-    position: absolute;
-    visibility: hidden;
-    display: none;
-  }
-  label {
-    color: #9a929e;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 5px 20px;
-  }
-  input[type=radio]:checked + label {
-    color: #ccc8ce;
-    background: #675f6b;
-  }
-  label + input[type=radio] + label {
-    border-left: solid 3px #675f6b;
-  }
-  .radio-group {
-    margin: 20px;
-    overflow: hidden;
-    width: 236px;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 2px;
-    background: rgba(118, 118, 128, 0.12);
-    border-radius: 8px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
   }
 }
 

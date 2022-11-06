@@ -1,15 +1,15 @@
 @charset "UTF-8";
-/*Меню фильтра*/
+/*Меню выпадающего фильтра ПРАВОГО*/
 #filter_power {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   position: absolute;
-  width: 273px;
-  height: 240px;
-  left: 952px;
-  top: 253px;
+  width: 288px;
+  height: 265px;
+  left: 913px;
+  top: 214px;
   background: #FFFFFF;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -55,7 +55,6 @@
     left: 0;
     top: 0;
     position: absolute;
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
   }
   input[type=checkbox]:checked {
     --b: var(--active);
@@ -130,7 +129,7 @@
     opacity: 0.6;
   }
 }
-ul {
+.filter_power__items {
   margin: 10px;
   padding: 0;
   list-style: none;
@@ -144,7 +143,7 @@ ul {
   /* identical to box height, or 100% */
   color: #222222;
 }
-ul li {
+.filter_power__items li {
   margin: 16px 0;
   position: relative;
   display: flex;
@@ -152,6 +151,11 @@ ul li {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  border-bottom: 1px solid rgba(120, 120, 128, 0.16);
+}
+
+.filter_power__items li:last-child {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=filter.css.map */

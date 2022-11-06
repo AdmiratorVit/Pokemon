@@ -1,15 +1,16 @@
-/*Меню фильтра*/
+/*Меню выпадающего фильтра ПРАВОГО*/
 
 #filter_power {
-  display: flex;
+  //display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   position: absolute;
-  width: 273px;
-  height: 240px;
-  left: 952px;
-  top: 253px;
+  width: 288px;
+  height: 265px;
+  left: 913px;
+  top: 214px;
   background: #FFFFFF;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -54,7 +55,7 @@
       left: 0;
       top: 0;
       position: absolute;
-      transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+      //transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
     }
     &:checked {
       --b: var(--active);
@@ -140,7 +141,8 @@
 
 // Demo
 
-ul {
+
+.filter_power__items {
   margin: 10px;
   padding: 0;
   list-style: none;
@@ -162,5 +164,10 @@ ul {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(120, 120, 128, 0.16);
   }
+}
+
+.filter_power__items li:last-child {
+    border-bottom: none;
 }
