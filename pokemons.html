@@ -39,21 +39,57 @@
         </div>
         <div class="sub_menu">
             <div class="sub_menu_title">Покемоны</div>
+
+            <div id="menuToggle_power">По убыванию силы
+                <input type="checkbox" />
+                <figure class="checkbox_power_figure"></figure>
+
+<!--                <div id="menu_power">-->
+<!--                    <div class="menu_title">Сортировка</div>-->
+<!--                    <form action="#">-->
+<!--                        <div class="radio-group">-->
+<!--                            <input type="radio" id="desc" name="selector"><label for="desc">По возрастанию силы</label>-->
+<!--                            <input type="radio" id="asc" name="selector"><label for="asc">По убыванию силы</label>-->
+<!--                            <input type="radio" id="abc" name="selector"><label for="abc">По алфавиту</label>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+
+
+            </div>
+
+
             <div class="sub_menu_search">
-                <input id="search" type="search" name="search" required placeholder="Поиск">
+                <input id="search" type="search" name="search" required placeholder="Поиск" />
                 <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
             </div>
+
+
             <div id="menuToggle">
+                <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
                 <input type="checkbox" />
                 <figure class="checkbox_figure"></figure>
-                <ul id="menu">
-                    <li><a href="#">
-                        <h6>features</h6>
-                    </a></li>
-                    <li><a href="#">
-                        <h6>works</h6>
-                    </a></li>
-                </ul>
+                <div id="menu">
+                    <div class="menu_title">Фильтры</div>
+                    <form action="#">
+                        <div class="menu_power">сила тут</div>
+
+                        <div class="radio-group">
+                            <input type="radio" id="option-one" name="selector"><label for="option-one">1</label>
+                            <input type="radio" id="option-two" name="selector"><label for="option-two">2</label>
+                            <input type="radio" id="option-three" name="selector"><label for="option-three">3</label>
+                            <input type="radio" id="option-four" name="selector"><label for="option-four">4</label>
+                            <input type="radio" id="option-five" name="selector"><label for="option-five">5</label>
+                            <input type="radio" id="option-six" name="selector"><label for="option-six">6+</label>
+                        </div>
+
+                        <div class="menu_alive">
+                            <label class="filter_label" for="alive">Только живые</label>
+                            <input class="filter_radio" type="radio" name="alive" id="alive">
+                        </div>
+                        <div class="menu_notinpokebol"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -165,7 +201,6 @@
             </a>
         </div>
     </div>
-
 
     <div class="gradient_background"></div>
 </div>
