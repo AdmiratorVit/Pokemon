@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Pokemon Classic;
+  src: url(../fonts/PokemonClassic.woff2) format("woff2"), url(../fonts/PokemonClassic.woff2) format("woff"), url(../fonts/PokemonClassic.woff2) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{    overflow: hidden;}
+
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .parent {
@@ -13,10 +22,10 @@
   }
   .parent__block1_logo {
     position: absolute;
-    width: 252px;
-    height: 244px;
-    left: 523px;
-    top: 124px;
+    //width: 252px;
+    //height: 244px;
+    left: 649px;
+    top: 90px;
     background: linear-gradient(42.24deg, #ED6F2D 13.34%, #FFD600 106.42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -25,9 +34,8 @@
   .parent__block1_title {
     position: absolute;
     width: 476px;
-    height: 110px;
-    left: 401px;
-    top: 193px;
+    left: 528px;
+    top: 157px;
     font-family: "Pokemon Classic", serif;
     font-style: normal;
     font-weight: 600;
@@ -43,13 +51,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 40px;
-    gap: 30px;
+    padding: 50px 30px;
+    gap: 23px;
     position: absolute;
-    width: 407px;
-    height: 275px;
-    left: 435px;
-    top: 466px;
+    left: 563px;
+    top: 430px;
     background: #FFFFFF;
     border-radius: 40px;
     z-index: 2;
@@ -101,3 +107,13 @@
     line-height: 16px;
     cursor: pointer;
   }
+  .gradient_background {
+    position: fixed;
+    width: 1335px;
+    height: 100vh;
+    top: 250px;
+    background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
+    filter: blur(200px);
+    z-index: -1;
+  }
+}
