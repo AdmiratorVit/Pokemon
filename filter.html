@@ -2,31 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Сортировка по силе</title>
+    <title>Фильтр</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/sorting_power.css">
+    <link rel="stylesheet" href="./CSS/filter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div id="sorting_power">
-        <div class="sorting_power_title">Сортировка</div>
+    <div id="filter_power">
+        <div class="filter_power_title">Фильтры</div>
         <form action="#">
             <div class="radio-group">
                 <ul>
                     <li>
-                        <label for="desc">По возрастанию силы</label><input type="radio" id="desc" name="selector" checked>
+                        <div class="">
+                            <input type="checkbox" id="one" name="selector" checked><label for="one">1</label>
+                            <input type="checkbox" id="two" name="selector" checked><label for="two">2</label>
+                            <input type="checkbox" id="three" name="selector" checked><label for="three">3</label>
+                            <input type="checkbox" id="four" name="selector" checked><label for="four">4</label>
+                            <input type="checkbox" id="five" name="selector" checked><label for="five">5</label>
+                            <input type="checkbox" id="six" name="selector" checked><label for="six">6+</label>
+                        </div>
                     </li>
                     <li>
-                        <label for="asc">По убыванию силы</label><input type="radio" id="asc" name="selector">
+                        <label for="alive">Только живые</label>
+                        <input id="alive" type="checkbox" class="switch">
                     </li>
                     <li>
-                        <div><label for="abc">По алфавиту</label></div>
-                        <div><input type="radio" id="abc" name="selector"></div>
-
-
+                        <div><label for="ball">Не в покеболе</label></div>
+                        <input id="ball" type="checkbox" class="switch">
                     </li>
                 </ul>
             </div>
