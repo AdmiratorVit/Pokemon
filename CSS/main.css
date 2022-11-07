@@ -4,6 +4,12 @@
   font-weight: 400;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   overflow: hidden;
 }
@@ -20,10 +26,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
   .parent__block1_logo {
     position: absolute;
-    left: 649px;
     top: 90px;
     background: linear-gradient(42.24deg, #ED6F2D 13.34%, #FFD600 106.42%);
     -webkit-background-clip: text;
@@ -33,7 +39,6 @@ body {
   .parent__block1_title {
     position: absolute;
     width: 476px;
-    left: 528px;
     top: 157px;
     font-family: "Pokemon Classic", serif;
     font-style: normal;
@@ -53,7 +58,6 @@ body {
     padding: 50px 30px;
     gap: 23px;
     position: absolute;
-    left: 563px;
     top: 430px;
     background: #FFFFFF;
     border-radius: 40px;

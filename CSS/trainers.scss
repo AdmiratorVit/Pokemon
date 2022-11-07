@@ -41,7 +41,7 @@
   .parent__block1 {
     position: relative;
     //border: solid red 1px;
-    width: 1280px;
+    width: 1276px;
     height: 832px;
     display: flex;
     flex-direction: column;
@@ -159,13 +159,14 @@
 
 
   .header{
-    width: 1280px;
+    width: 1276px;
     position: relative;
     display: flex;
     top: 40px;
     z-index: 50;
     flex-direction: column;
-    margin-left: 152px;
+    //margin-left: 152px;
+    margin: auto;
   }
 
   .top_menu{
@@ -241,12 +242,12 @@
     flex-grow: 0;
     padding: 18px;
     position: absolute;
-    left: 1140px;
+    right: 0;
   }
 
   .top_menu_id{
     position: absolute;
-    left: 1025px;
+    right: 85px;
     top: 21px;
   }
 
@@ -290,7 +291,7 @@
   .sub_menu_search{
     width: 232px;
     height: 48px;
-    margin-left: 385px;
+    margin-left: 460px;
     display: flex;
     position: relative;
   }
@@ -362,7 +363,7 @@
     letter-spacing: -0.07999999821186066px;
     text-align: center;
     color: white;
-    right: 75px;
+    right: 0px;
     border-radius: 15px;
     position: absolute;
     bottom: 35px;
@@ -474,13 +475,14 @@
 
 
   .parent__mainblock{
-    width: 1280px;
+    width: 1276px;
     display: grid;
     grid-template-columns: repeat(3, 389px);
     column-gap: 16px;
     row-gap: 60px;
-    left: 113px;
+    //left: 113px;
     position: relative;
+    margin: 0 auto;
     margin-top: 99px;
     padding: 0 40px 0 40px;
   }
@@ -757,5 +759,5 @@
     backdrop-filter: blur(50px);
     opacity: 0.6;
   }
-  
+
 }
