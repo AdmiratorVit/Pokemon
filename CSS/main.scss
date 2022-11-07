@@ -129,6 +129,20 @@ no_scroll{    overflow: hidden;}
     z-index: -1;
   }
 
+  .gradient_background_one {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -10px;
+    top: 26px;
+    background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
+    opacity: 0.8;
+    filter: blur(169.663px);
+    z-index: -1;
+  }
+
+
+
   .header{
     width: 1276px;
     position: relative;
@@ -322,13 +336,21 @@ no_scroll{    overflow: hidden;}
   }
 
 
+
+  .parent__bottom_line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
   .bottom_line{
-    margin: 75px 198px 38px 198px;
+    margin: 75px 0 38px 0;
     padding: 0;
-    width: 75%;
+    width: 1200px;
     height: 0;
     border: none;
-    border-top: 2px solid #ffffff
+    border-top: 2px solid #ffffff;
   }
 
   .footer{

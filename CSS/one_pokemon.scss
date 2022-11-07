@@ -47,25 +47,54 @@ body{
   }
 }
 
+
+
+.parameters_block{
+  position: relative;
+  left: 989px;
+  width: 406px;
+}
+
+.parameters_block_top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
 .parameters_block_name{
-  position: absolute;
-  width: 295px;
-  height: 62px;
-  left: 40px;
-  top: 140px;
+  position: relative;
+  top: -8px;
   font-family: "Pokemon Classic", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 62px;
   color: #000000;
+  margin-right: 12px;
 }
 
 .parameters_block_pokemon_id{
   display: flex;
   column-gap: 10px;
-  position: absolute;
-  top: 271px;
+  position: relative;
+  top: 12px;
+  width: 146px;
+  height: 40px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 10px;
+  flex-grow: 0;
+  border: #ffffff solid 1px;
+  padding-left: 14px;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
 }
 .parameters_block_pokemon_id_number{
   font-family: Inter, serif;
@@ -78,4 +107,152 @@ body{
 
 .parameters_block_pokemon_id_copy{
   cursor: pointer;
+}
+
+
+.parameters_block_parameters{
+  display: grid;
+  grid-template-columns: 4fr 2fr 11fr;
+  column-gap: 2px;
+  position: relative;
+  top: 20px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  background: #ffffff;
+  border-radius: 10px;
+  flex-grow: 0;
+  border: #ffffff solid 1px;
+  padding: 28px 0px 0 29px;
+  width: 403px;
+  margin-top: 24px;
+  height: 100px;
+  justify-items: start;
+  progress{
+    width: 220px;
+  }
+}
+
+.parameters_block_trainer{
+  display: flex;
+  position: relative;
+  top: 111px;
+  color: #222222;
+  background: #ffffff;
+  border-radius: 20px;
+  border: #ffffff solid 1px;
+  width: 403px;
+  height: 108px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.parameters_block_trainer_name{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.parameters_block_trainer_name_top{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  opacity: 0.5;
+}
+.parameters_block_trainer_name_name{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+}
+
+
+.parameters_block_trainer_level{
+  border-radius: 20px;
+  width: 105px;
+  height: 33px;
+  padding: 7px 0 0 0;
+  text-align: center;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 29px;
+}
+
+.parameters_block_parameters_row{
+  width: 100%;
+  display: flex;
+}
+
+.parameters_block_trainer_arrow{
+  margin-left: 58px;
+}
+
+
+.battle_history{
+  display: flex;
+  position: relative;
+  top: 123px;
+  color: #222222;
+  background: #ffffff;
+  border-radius: 20px;
+  border: #ffffff solid 1px;
+  width: 403px;
+  height: 66px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+
+.battle_history_txt{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  margin-left: 7px;
+}
+
+.battle_history_data{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  opacity: 0.5;
+  margin-left: 9px;
+}
+
+
+.battle_history_arrow{
+  margin-left: 187px;
+}
+
+.level1{
+  color: #45D221;
+  border: 1px solid #45D221;
+}
+
+.level2{
+  color: #BB2DED;
+  border: 1px solid #BB2DED;
+}
+.level3plus{
+  color: #ED2D2D;
+  border: 1px solid #ED2D2D;
 }
