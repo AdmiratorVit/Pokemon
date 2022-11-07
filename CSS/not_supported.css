@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+body {
+  background: #f8f8f8;
+}
+
 .parent {
   position: relative;
   width: 100%;
@@ -80,12 +84,12 @@
     position: relative;
   }
   .gradient_background {
-    position: absolute;
     width: 750px;
     height: 1465px;
     top: 150px;
     background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
     filter: blur(169.663px);
+    opacity: 0.5;
     transform: rotate(-90deg);
   }
 }

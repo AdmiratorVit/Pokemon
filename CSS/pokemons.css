@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+body {
+  background: #f8f8f8;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   background-color: #ffffff;
@@ -132,159 +136,15 @@
     cursor: pointer;
   }
   .gradient_background {
-    position: fixed;
-    width: 1335px;
-    height: 100vh;
-    top: 250px;
-    background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
-    filter: blur(200px);
-    z-index: -1;
-  }
-  .header {
-    width: 1276px;
-    position: relative;
-    display: flex;
-    top: 40px;
-    z-index: 50;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 40px 0 40px;
-  }
-  .top_menu {
+    position: absolute;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  .top_menu_logo {
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    flex-grow: 0;
-    padding: 15px;
-  }
-  .top_menu_pokemons {
-    width: 175px;
-    height: 60px;
-    background: #ffffff;
-    border-radius: 15px;
-    flex-grow: 0;
-    padding: 15px;
-    position: relative;
-    left: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-  }
-  .top_menu_pokemons_btn {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    position: absolute;
-    background: #ffffff;
-    border-radius: 15px;
-    flex-grow: 0;
-    width: 175px;
-    height: 60px;
-    border: #ffffff solid 1px;
-    left: 0;
-    padding-left: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  .top_menu_pokemons_btn:hover {
-    border: #ED6F2D solid 1px;
-  }
-  .top_menu_pokemons_btn_img {
-    left: 15px;
-  }
-  .top_menu_pokemons_btn_txt {
-    margin-left: 15px;
-  }
-  .top_menu_exit_btn {
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    flex-grow: 0;
-    padding: 18px;
-    position: absolute;
-    right: 40px;
-  }
-  .top_menu_id {
-    position: absolute;
-    right: 122px;
-    top: 21px;
-  }
-  .id_txt {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    opacity: 0.2;
-  }
-  .id_number {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-  }
-  .sub_menu {
-    margin-top: 95px;
-    display: flex;
-  }
-  .sub_menu_title {
-    position: absolute;
-    width: 295px;
-    height: 62px;
-    left: 40px;
-    top: 140px;
-    font-family: "Pokemon Classic", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 62px;
-    color: #000000;
-  }
-  .sub_menu_search {
-    width: 232px;
-    height: 48px;
-    margin-left: 385px;
-    display: flex;
-    position: relative;
-  }
-  #search {
-    display: flex;
-    padding: 4px 16px 4px 45px;
-    width: 232px;
-    height: 48px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    border: solid 1px white;
-  }
-  #search::placeholder {
-    color: rgba(34, 34, 34, 0.5);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.592px;
-    font-feature-settings: "case" on;
-  }
-  .sub_menu_search_img {
-    position: absolute;
-    top: 14px;
-    left: 13px;
+    height: 1199px;
+    left: 45px;
+    top: 176px;
+    background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
+    filter: blur(169.663px);
+    opacity: 0.5;
+    z-index: -1;
   }
   /*Меню фильтра ПРАВОЕ*/
   #menuToggle {
@@ -456,6 +316,11 @@
     height: 33px;
     padding: 7px 0 0 0;
     text-align: center;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
   }
   .parent__mainblock_card_pokemon_id {
     display: flex;
@@ -473,126 +338,6 @@
   }
   .parent__mainblock_card_pokemon_id_copy {
     cursor: pointer;
-  }
-  .parent__mainblock_load_more {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 129px;
-  }
-  .parent__mainblock_load_more_button {
-    width: 178px;
-    height: 48px;
-    background: #ED6F2D;
-    border-radius: 48px;
-    border: #ED6F2D 1px solid;
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    cursor: pointer;
-  }
-  .bottom_line {
-    margin: 75px 198px 38px 198px;
-    padding: 0;
-    width: 75%;
-    height: 0;
-    border: none;
-    border-top: 2px solid #ffffff;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    margin: 0 auto;
-    width: 1276px;
-  }
-  .footer_docs_btn {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    position: absolute;
-    background: #ffffff;
-    border-radius: 20px;
-    flex-grow: 0;
-    width: 184px;
-    height: 64px;
-    border: #ffffff solid 1px;
-    left: 200px;
-    padding: 5px 0 0 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  .footer_docs_btn:hover {
-    border: #ED6F2D solid 1px;
-  }
-  .footer_docs_btn_img {
-    left: 15px;
-  }
-  .footer_docs_btn_txt {
-    margin-left: 15px;
-  }
-  .footer_rules_btn {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    position: absolute;
-    background: #ffffff;
-    border-radius: 20px;
-    flex-grow: 0;
-    width: 184px;
-    height: 64px;
-    border: #ffffff solid 1px;
-    right: 198px;
-    padding: 5px 0 0 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  .footer_rules_btn:hover {
-    border: #ED6F2D solid 1px;
-  }
-  .footer_rules_btn_img {
-    margin-left: 11px;
-  }
-  .footer_rules_btn_txt {
-    margin-left: 15px;
-  }
-  .QAStudio {
-    width: 115px;
-    height: 29px;
-    display: flex;
-    margin: 18px 0 0 0;
-    column-gap: 7px;
-  }
-  .QA {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #ED6F2D;
-  }
-  .Studio {
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    color: #222222;
   }
   .power1 {
     color: #45D221;

@@ -1,18 +1,82 @@
-.one_pokemon {
-  transform: translate(278px, -2px);
+body {
+  background: #f8f8f8;
 }
 
-.sub_menu_back {
+.one_pokemon {
+  width: 498px;
+  height: 410px;
+  position: absolute;
+  left: 321px;
+  top: 200px;
+}
+
+.sub_menu_single_back_btn_img {
+  left: 18px;
+  top: 3px;
+  position: relative;
+}
+
+.sub_menu_single {
+  margin-top: 39px;
+  display: flex;
+}
+
+.sub_menu_single_back_btn {
   width: 110px;
   height: 46px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
   background: #ffffff;
   border-radius: 15px;
   flex-grow: 0;
-  padding: 15px;
-  position: relative;
+  border: #ffffff solid 1px;
+  left: 0;
+  padding-left: 8px;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  transform: translate(0px, -56px);
+  text-decoration: none;
+}
+.sub_menu_single_back_btn:hover {
+  border: #ED6F2D solid 1px;
+}
+
+.parameters_block_name {
+  position: absolute;
+  width: 295px;
+  height: 62px;
+  left: 40px;
+  top: 140px;
+  font-family: "Pokemon Classic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 62px;
+  color: #000000;
+}
+
+.parameters_block_pokemon_id {
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  top: 271px;
+}
+
+.parameters_block_pokemon_id_number {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.parameters_block_pokemon_id_copy {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=one_pokemon.css.map */
