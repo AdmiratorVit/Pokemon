@@ -14,7 +14,7 @@ body {
   background: #f8f8f8;
 }
 
-no_scroll {
+.no_scroll {
   overflow: hidden;
 }
 

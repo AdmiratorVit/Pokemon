@@ -238,10 +238,112 @@ body{
   margin-left: 9px;
 }
 
+.parameters_block_trainer_level_arrow{
+  margin-left: 61px;
+}
 
 .battle_history_arrow{
-  margin-left: 187px;
+  margin-left: 190px;
 }
+
+.battle_history_detail{
+  display: flex;
+  position: relative;
+  top: 123px;
+  color: #222222;
+  background: #ffffff;
+  border-radius: 20px;
+  border: #ffffff solid 1px;
+  width: 403px;
+  height: 93px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.battle_history_detail_logo{
+  scale: 150%;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.battle_history_detail_pokemon{
+  margin-top: 6px;
+  margin-left: 25px;
+  scale: 94%;
+}
+
+.battle_history_detail_pokemon{
+  margin-top: 6px;
+  margin-left: 25px;
+  scale: 94%;
+}
+
+
+
+.battle_history_detail_data{
+  padding-left: 13px;
+}
+
+.battle_history_detail_data_txt{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #222222;
+  opacity: 0.5;
+  margin-left: 9px;
+}
+.battle_history_detail_data_id{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #808080;
+  margin-left: 9px;
+}
+
+.battle_history_detail_data_win{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  //transform: rotate(-90deg);
+  background: #80E21D;
+  border-radius: 4px 20px 20px 4px;
+  width: 37px;
+  height: 93px;
+}
+
+.battle_history_detail_data_win{
+  background: #80E21D;
+  border-radius: 4px 20px 20px 4px;
+  width: 37px;
+  height: 93px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0px 0px 61px;
+}
+
+.win_txt{
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+}
+
+
 
 .level1{
   color: #45D221;

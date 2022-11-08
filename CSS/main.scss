@@ -14,7 +14,9 @@ body{
   background: #f8f8f8;
 }
 
-no_scroll{    overflow: hidden;}
+.no_scroll{
+  overflow: hidden;
+}
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
