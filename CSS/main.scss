@@ -18,6 +18,10 @@ body{
   overflow: hidden;
 }
 
+.disabled {
+  display: none;
+}
+
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .parent {
@@ -34,10 +38,7 @@ body{
   }
   .parent__block1_logo {
     position: absolute;
-    //width: 252px;
-    //height: 244px;
-    //left: 649px;
-    top: 90px;
+    top: calc(0.088*100vh);
     background: linear-gradient(42.24deg, #ED6F2D 13.34%, #FFD600 106.42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,7 +48,8 @@ body{
     position: absolute;
     width: 476px;
     //left: 528px;
-    top: 157px;
+    //top: 157px;
+    top: calc(0.162*100vh);
     font-family: "Pokemon Classic", serif;
     font-style: normal;
     font-weight: 600;
@@ -67,7 +69,8 @@ body{
     gap: 23px;
     position: absolute;
     //left: 563px;
-    top: 430px;
+    //top: 430px;
+    top: calc(0.57*100vh);
     background: #FFFFFF;
     border-radius: 40px;
     z-index: 2;
@@ -135,9 +138,8 @@ body{
     position: absolute;
     width: 100%;
     height: 100vh;
-    left: -10px;
-    top: 26px;
-    background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
+    transform: translate(-250px, -450px);
+    background: radial-gradient(59.88% 59.88% at 50% 45%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
     opacity: 0.8;
     filter: blur(169.663px);
     z-index: -1;
@@ -246,7 +248,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    opacity: 0.2;
+    opacity: 0.4;
   }
   .id_number{
     font-family: Inter, serif;
@@ -463,5 +465,7 @@ body{
     width: 100%;
     z-index: -2;
   }
+
+  .Empty{opacity: 0.2}
 
 }

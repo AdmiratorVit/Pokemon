@@ -100,9 +100,6 @@ body {
     flex: none;
     flex-grow: 0;
   }
-  #form_authorization {
-    display: contents;
-  }
   #id_trainer_form {
     width: 327px;
     height: 48px;
@@ -220,13 +217,13 @@ body {
   }
   #menuToggle__sorting_power > input {
     display: flex;
-    margin-left: 148px;
-    width: 50px;
-    height: 35px;
+    width: 197px;
+    height: 43px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
+    transform: translateX(-7px);
   }
   /* меню силы (левое). Чекбокс*/
   #menuToggle__sorting_power input:checked ~ #sorting_power {
@@ -311,12 +308,12 @@ body {
   left: 121px;
   font-family: Inter, serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 16px;
   border-radius: 20px;
-  width: 110px;
-  height: 34px;
+  width: 99px;
+  height: 32px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -328,18 +325,18 @@ body {
   display: flex;
   position: absolute;
   top: 83px;
-  left: 237px;
+  left: 232px;
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   border-radius: 20px;
-  width: 127px;
+  width: 102px;
   height: 34px;
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
 }
@@ -388,19 +385,19 @@ body {
   border: 1px solid #ED2D2D;
 }
 
-.qnt1 {
-  color: #45D221;
-  border: 1px solid #45D221;
+.qnt0 div {
+  opacity: 0.2;
 }
 
-.qnt2 {
-  color: #BB2DED;
-  border: 1px solid #BB2DED;
+.qnt1 div:nth-of-type(2) {
+  opacity: 0.2;
+}
+.qnt1 div:nth-of-type(3) {
+  opacity: 0.2;
 }
 
-.qnt3plus {
-  color: #ED2D2D;
-  border: 1px solid #ED2D2D;
+.qnt2 div:nth-of-type(3) {
+  opacity: 0.2;
 }
 
 .disabled_card {
@@ -416,6 +413,98 @@ body {
 .disabled_card_base {
   backdrop-filter: blur(50px);
   opacity: 0.6;
+}
+
+/* меню силы (левое)*/
+#menuToggle__sorting_power1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0 12px 14px;
+  width: 213px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-left: 315px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #090A0A;
+}
+
+#menuToggle__sorting_power1 > input {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* меню силы (левое). Чекбокс*/
+#menuToggle__sorting_power1 input:checked ~ #sorting_power1 {
+  display: flex;
+}
+
+#menuToggle__sorting_power1 input:checked ~ .checkbox_power_figure1 {
+  transform: rotate(180deg);
+}
+
+.checkbox_power_figure1 {
+  background-image: url(../img/Vector.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* меню силы (левое)*/
+#menuToggle__sorting_power1pok {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0 12px 14px;
+  width: 213px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-left: 315px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #090A0A;
+}
+
+#menuToggle__sorting_power1pok > input {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* меню силы (левое). Чекбокс*/
+#menuToggle__sorting_power1pok input:checked ~ #sorting_power1pok {
+  display: flex;
+}
+
+#menuToggle__sorting_power1pok input:checked ~ .checkbox_power_figure1pok {
+  transform: rotate(180deg);
+}
+
+.checkbox_power_figure1pok {
+  background-image: url(../img/Vector.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=trainers.css.map */

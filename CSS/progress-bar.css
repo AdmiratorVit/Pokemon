@@ -1,0 +1,64 @@
+body {
+  background: #eef1f3;
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.progress-bar {
+  border-radius: 60px;
+  overflow: hidden;
+  width: 100%;
+}
+.progress-bar span {
+  display: block;
+}
+
+.bar {
+  background: rgba(34, 34, 34, 0.1);
+}
+
+.progress {
+  animation: loader 8s ease infinite;
+  background: #ED6F2D;
+  color: #fff;
+  padding: 5px;
+  width: 0;
+}
+
+.progress-bar {
+  max-width: 90%;
+  height: 6px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=progress-bar.css.map */

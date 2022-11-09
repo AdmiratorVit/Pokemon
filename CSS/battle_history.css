@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* Desktop */
+body {
+  background: #f8f8f8;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  /*Меню фильтра*/
+  #sorting_power1 {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    width: 288px;
+    height: 274px;
+    left: 0;
+    top: 0;
+  }
+  #sorting_power1pok {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    width: 288px;
+    height: 274px;
+    left: 0;
+    top: 0;
+  }
+  .sorting_power_title {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #222222;
+    margin-left: 10px;
+  }
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type=radio] {
+      --active: #ED6F2D;
+      --active-inner: #fff;
+      --border: 8px solid #ED6F2D;
+      --background: #E9E9EB;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 32px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    input[type=radio]:after {
+      content: "";
+      display: block;
+      left: -1px;
+      top: -1px;
+      position: absolute;
+    }
+    input[type=radio]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    input[type=radio]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    input[type=radio]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    input[type=radio]:disabled + label {
+      cursor: not-allowed;
+    }
+    input[type=radio]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    input[type=radio]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    input[type=radio]:not(.switch) {
+      width: 32px;
+    }
+    input[type=radio]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    input[type=radio]:not(.switch):checked {
+      --o: 1;
+    }
+    input[type=radio] + label {
+      font-size: 14px;
+      line-height: 21px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+    input[type=radio] {
+      border-radius: 50%;
+    }
+    input[type=radio]:after {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, 0.7));
+    }
+    input[type=radio]:checked {
+      --s: .5;
+    }
+  }
+  .sorting_power__items {
+    list-style: none;
+    width: 418px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 63px;
+    color: #222222;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    padding-bottom: 60px;
+    overflow: auto;
+    height: 270px;
+  }
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(120, 120, 128, 0.16);
+    top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.one_pokemon_menu {
+  margin-left: 166px !important;
+  width: 35px !important;
+}
+
+.sorting_power__items li:last-child {
+  border-bottom: none;
+}
+
+.sorting_power__items_for_trainer {
+  list-style: none;
+  width: 407px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 63px;
+  color: #222222;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  padding-bottom: 60px;
+  overflow: auto;
+  height: 270px;
+}
+
+li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(120, 120, 128, 0.16);
+  top: 10px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=battle_history.css.map */

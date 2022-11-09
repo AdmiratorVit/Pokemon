@@ -24,12 +24,6 @@ body {
 .sub_menu_single_back_btn {
   width: 110px;
   height: 46px;
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
   background: #ffffff;
   border-radius: 15px;
   flex-grow: 0;
@@ -39,10 +33,23 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  text-decoration: none;
 }
 .sub_menu_single_back_btn:hover {
   border: #ED6F2D solid 1px;
+}
+
+.sub_menu_single_back_btn_link {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding-left: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .parameters_block {
@@ -134,7 +141,7 @@ body {
 .parameters_block_trainer {
   display: flex;
   position: relative;
-  top: 111px;
+  top: 43px;
   color: #222222;
   background: #ffffff;
   border-radius: 20px;
@@ -150,13 +157,14 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  row-gap: 8px;
 }
 
 .parameters_block_trainer_name_top {
   font-family: Inter, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
   color: #222222;
   opacity: 0.5;
@@ -173,15 +181,15 @@ body {
 
 .parameters_block_trainer_level {
   border-radius: 20px;
-  width: 105px;
+  width: 95px;
   height: 33px;
   padding: 7px 0 0 0;
   text-align: center;
   font-family: Inter, serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
   margin-left: 29px;
 }
 
@@ -197,7 +205,7 @@ body {
 .battle_history {
   display: flex;
   position: relative;
-  top: 123px;
+  top: 66px;
   color: #222222;
   background: #ffffff;
   border-radius: 20px;
@@ -238,25 +246,34 @@ body {
   margin-left: 190px;
 }
 
+.battle_history_cross {
+  margin-left: 185px;
+}
+
+#pokeball_one_pok_parameters {
+  margin-left: 5px;
+  scale: 130%;
+  margin-top: 12px;
+}
+
 .battle_history_detail {
   display: flex;
   position: relative;
-  top: 123px;
   color: #222222;
   background: #ffffff;
   border-radius: 20px;
-  border: #ffffff solid 1px;
   width: 403px;
   height: 93px;
   flex-direction: row;
   align-items: center;
   padding-left: 20px;
   margin-bottom: 20px;
+  top: 10px;
 }
 
 .battle_history_detail_logo {
   scale: 150%;
-  margin-left: 8px;
+  margin-left: 15px;
   margin-top: 6px;
 }
 
@@ -268,12 +285,12 @@ body {
 
 .battle_history_detail_pokemon {
   margin-top: 6px;
-  margin-left: 25px;
+  margin-left: 40px;
   scale: 94%;
 }
 
 .battle_history_detail_data {
-  padding-left: 13px;
+  padding-left: 8px;
 }
 
 .battle_history_detail_data_txt {
@@ -308,19 +325,14 @@ body {
   border-radius: 4px 20px 20px 4px;
   width: 37px;
   height: 93px;
-}
-
-.battle_history_detail_data_win {
-  background: #80E21D;
-  border-radius: 4px 20px 20px 4px;
-  width: 37px;
-  height: 93px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 0 0px 0px 61px;
+  margin: 0 0 0 61px;
+  position: absolute;
+  right: 0;
 }
 
 .win_txt {
@@ -331,6 +343,28 @@ body {
   line-height: 17px;
   color: #FFFFFF;
   transform: rotate(-90deg);
+}
+
+.battle_date {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(34, 34, 34, 0.5);
+  width: 67px;
+  height: 25px;
+  left: 15px;
+  top: 81px;
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10px;
+  position: absolute;
 }
 
 .level1 {

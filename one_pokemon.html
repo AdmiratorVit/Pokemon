@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/one_pokemon.css">
     <link rel="stylesheet" href="./CSS/pokemons.css">
+    <link rel="stylesheet" href="./CSS/progress-bar.css">
+    <link rel="stylesheet" href="./CSS/battle_history.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -41,10 +43,9 @@
         </div>
         <div class="sub_menu_single">
             <div class="sub_menu_single_back_btn">
-                <a href="trainers.html" class="sub_menu_single_back_btn">
+                <a href="trainers.html" class="sub_menu_single_back_btn_link">
                     <div class="sub_menu_single_back_btn_txt">Назад</div>
                     <figure class="sub_menu_single_back_btn_img"><img src="./img/Vector_right.svg"></figure>
-
                 </a>
             </div>
         </div>
@@ -58,7 +59,7 @@
         <div class="parameters_block_top">
             <div class="parameters_block_name">Пикачу</div>
             <div class="parameters_block_pokeball">
-                <figure><img src="./img/pokeball.svg"></figure>
+                <figure id="pokeball_one_pok_parameters"><img src="./img/pngwing%201.svg"></figure>
             </div>
         </div>
         <div class="parameters_block_pokemon_id">
@@ -70,47 +71,121 @@
         <div class="parameters_block_parameters">
             <div class="parameter">Стадия</div>
             <div class="parameters_value">2</div>
-            <div class="parameters_bar"><progress value="50" max="100"></progress></div>
+            <div class="progress-bar">
+              <span class="bar">
+                <span class="progress"></span>
+              </span>
+            </div>
             <div class="parameter">Атака</div>
             <div class="parameters_value">6</div>
-            <div><progress value="30" max="100"></progress></div>
+            <div class="progress-bar">
+              <span class="bar">
+                <span class="progress"></span>
+              </span>
+            </div>
         </div>
         <div class="parameters_block_trainer">
-            <div><figure class="parameters_block_trainer_pic"><img src="./img/Frame%201.svg"></figure></div>
+            <div>
+                <figure class="parameters_block_trainer_pic"><img src="./img/Frame%201.svg"></figure>
+            </div>
             <div class="parameters_block_trainer_name">
-                <span class="parameters_block_trainer_name_top">Тренер</span>
                 <span class="parameters_block_trainer_name_name">Калахад</span>
+                <span class="parameters_block_trainer_name_top">391057782</span>
             </div>
             <div class="parameters_block_trainer_level level1">Уровень 6</div>
-            <div><figure class="parameters_block_trainer_level_arrow"><img src="./img/Vector_right.svg"></figure></div>
-
+            <div>
+                <a href="#">
+                    <figure class="parameters_block_trainer_level_arrow"><img src="./img/Vector_right.svg"></figure>
+                </a>
+            </div>
         </div>
         <div class="battle_history">
-            <div><figure><img src="./img/history.svg"></figure></div>
+            <div>
+                <figure><img src="./img/history.svg"></figure>
+            </div>
             <div class="battle_history_txt">История боев</div>
             <div class="battle_history_data">2</div>
-            <div><figure class="battle_history_arrow"><img src="./img/Vector_right.svg"></figure></div>
-        </div>
-        <div class="battle_history_detail">
-            <div class="battle_history_detail_logo"><figure><img src="./img/VS_menu.svg"></figure></div>
-            <div class="battle_history_detail_pokemon disabled_card"><figure><img src="./img/pokemon_PNG52.svg"></figure></div>
-            <div class="battle_history_detail_data">
-                <div class="battle_history_detail_data_txt">Бульбазавр</div>
-                <div class="battle_history_detail_data_id">391057782</div>
-            </div>
-            <div class="battle_history_detail_data_win">
-                <div class="win_txt">Победа</div>
-            </div>
-        </div>
-        <div class="battle_history_detail">
-            <div class="battle_history_detail_logo"><figure><img src="./img/VS_menu.svg"></figure></div>
-            <div class="battle_history_detail_pokemon disabled_card"><figure><img src="./img/pokemon_PNG52.svg"></figure></div>
-            <div class="battle_history_detail_data">
-                <div class="battle_history_detail_data_txt">Бульбазавр</div>
-                <div class="battle_history_detail_data_id">391057782</div>
-            </div>
-            <div class="battle_history_detail_data_win">
-                <div class="win_txt">Победа</div>
+            <div id="menuToggle__sorting_power1" class="one_pokemon_menu">
+                <input type="checkbox"/>
+                <figure class="checkbox_power_figure1"></figure>
+                <div id="sorting_power1">
+                    <form action="#">
+                            <ul class="sorting_power__items">
+                                <li>
+                                    <div class="battle_history_detail">
+                                        <div class="battle_history_detail_logo">
+                                            <figure><img src="./img/VS_menu.svg"></figure>
+                                        </div>
+                                        <div class="battle_date">11.02.22</div>
+                                        <div class="battle_history_detail_pokemon disabled_card">
+                                            <figure><img src="./img/pokemon_PNG52.svg"></figure>
+                                        </div>
+                                        <div class="battle_history_detail_data">
+                                            <div class="battle_history_detail_data_txt">Бульбазавр</div>
+                                            <div class="battle_history_detail_data_id">391057782</div>
+                                        </div>
+                                        <div class="battle_history_detail_data_win">
+                                            <div class="win_txt">Победа</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="battle_history_detail">
+                                        <div class="battle_history_detail_logo">
+                                            <figure><img src="./img/VS_menu.svg"></figure>
+                                        </div>
+                                        <div class="battle_date">11.02.22</div>
+                                        <div class="battle_history_detail_pokemon disabled_card">
+                                            <figure><img src="./img/pokemon_PNG52.svg"></figure>
+                                        </div>
+                                        <div class="battle_history_detail_data">
+                                            <div class="battle_history_detail_data_txt">Бульбазавр</div>
+                                            <div class="battle_history_detail_data_id">391057782</div>
+                                        </div>
+                                        <div class="battle_history_detail_data_win">
+                                            <div class="win_txt">Победа</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="battle_history_detail">
+                                        <div class="battle_history_detail_logo">
+                                            <figure><img src="./img/VS_menu.svg"></figure>
+                                        </div>
+                                        <div class="battle_date">11.02.22</div>
+                                        <div class="battle_history_detail_pokemon disabled_card">
+                                            <figure><img src="./img/pokemon_PNG52.svg"></figure>
+                                        </div>
+                                        <div class="battle_history_detail_data">
+                                            <div class="battle_history_detail_data_txt">Бульбазавр</div>
+                                            <div class="battle_history_detail_data_id">391057782</div>
+                                        </div>
+                                        <div class="battle_history_detail_data_win">
+                                            <div class="win_txt">Победа</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="battle_history_detail">
+                                        <div class="battle_history_detail_logo">
+                                            <figure><img src="./img/VS_menu.svg"></figure>
+                                        </div>
+                                        <div class="battle_date">11.02.22</div>
+                                        <div class="battle_history_detail_pokemon disabled_card">
+                                            <figure><img src="./img/pokemon_PNG52.svg"></figure>
+                                        </div>
+                                        <div class="battle_history_detail_data">
+                                            <div class="battle_history_detail_data_txt">Бульбазавр</div>
+                                            <div class="battle_history_detail_data_id">391057782</div>
+                                        </div>
+                                        <div class="battle_history_detail_data_win">
+                                            <div class="win_txt">Победа</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-body{
+body {
   background: #f8f8f8;
 }
 
@@ -32,13 +32,13 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
   background-color: #ffffff;
 }
 
 /* Desktop */
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
   .parent {
     justify-content: center;
   }
@@ -62,7 +62,7 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 2;
-    }
+  }
 
   .parent__block1_title {
     position: absolute;
@@ -98,24 +98,20 @@ body{
     z-index: 2;
   }
 
-.parent__block1_form_title{
-  width: 227px;
-  height: 29px;
-  font-family: Inter, serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  flex: none;
-  flex-grow: 0;
-}
-
-  #form_authorization{
-    display: contents;
+  .parent__block1_form_title {
+    width: 227px;
+    height: 29px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    flex: none;
+    flex-grow: 0;
   }
 
-  #id_trainer_form{
+  #id_trainer_form {
     width: 327px;
     height: 48px;
     background: #FFFFFF;
@@ -128,27 +124,27 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    top: calc(50% - 16px/2);
+    top: calc(50% - 16px / 2);
     padding-left: 15px;
     //margin: 25px 0;
   }
 
-.submit_authorization{
-  width: 327px;
-  height: 48px;
-  background: #ED6F2D;
-  border-radius: 48px;
-  flex: none;
-  flex-grow: 0;
-  border: none;
-  color: white;
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  cursor: pointer;
-}
+  .submit_authorization {
+    width: 327px;
+    height: 48px;
+    background: #ED6F2D;
+    border-radius: 48px;
+    flex: none;
+    flex-grow: 0;
+    border: none;
+    color: white;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+  }
 
 
   .gradient_background {
@@ -190,8 +186,8 @@ body{
     z-index: 2;
   }
 
-  #menuToggle input:checked~#filter_power {
-  display: flex;
+  #menuToggle input:checked ~ #filter_power {
+    display: flex;
   }
 
   .menuToggle_badge {
@@ -223,24 +219,6 @@ body{
     background-position: center;
   }
 
-
-  //.filter_radio {
-  //  width: 51px;
-  //  height: 31px;
-  //  left: calc(50% - 51px/2);
-  //  top: calc(50% - 31px/2 + 0px);
-  //  background: rgba(120, 120, 128, 0.16);
-  //}
-  //
-  //.filter_label {
-  //  font-family: Inter, serif;
-  //  font-style: normal;
-  //  font-weight: 500;
-  //  font-size: 16px;
-  //  line-height: 16px;
-  //  color: #222222;
-  //}
-
   /*конец меню фильтра*/
 
   /* меню силы (левое)*/
@@ -265,26 +243,25 @@ body{
 
   #menuToggle__sorting_power > input {
     display: flex;
-    margin-left: 148px;
-    width: 50px;
-    height: 35px;
+    width: 197px;
+    height: 43px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
+    transform: translateX(-7px);
   }
 
   /* меню силы (левое). Чекбокс*/
-  #menuToggle__sorting_power input:checked~#sorting_power {
-  //  transform: translate(-39px, -37px);
-  //  background: #FFFFFF;
+  #menuToggle__sorting_power input:checked ~ #sorting_power {
+    //  transform: translate(-39px, -37px);
+    //  background: #FFFFFF;
     display: flex;
   }
 
-  #menuToggle__sorting_power input:checked~.checkbox_power_figure {
-      transform: rotate(180deg);
+  #menuToggle__sorting_power input:checked ~ .checkbox_power_figure {
+    transform: rotate(180deg);
   }
-
 
 
   .checkbox_power_figure {
@@ -316,7 +293,7 @@ body{
   /* конец меню силы*/
 
 
-  .parent__mainblock{
+  .parent__mainblock {
     width: 1276px;
     display: grid;
     grid-template-columns: repeat(3, 389px);
@@ -328,7 +305,7 @@ body{
     padding: 0 40px 0 40px;
   }
 
-  .parent__mainblock_card{
+  .parent__mainblock_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +319,7 @@ body{
     border-radius: 40px;
   }
 
-  .parent__mainblock_card_img{
+  .parent__mainblock_card_img {
     position: absolute;
     width: 103px;
     height: 197px;
@@ -352,7 +329,7 @@ body{
     justify-content: center;
     padding-left: 24px;
   }
-  .parent__mainblock_card_name{
+  .parent__mainblock_card_name {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -363,114 +340,228 @@ body{
     top: 38px;
     left: 122px;
   }
-  }
-  .parent__mainblock_card_levels{
-    display: flex;
-    position: absolute;
-    top: 83px;
-    left: 121px;
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    border-radius: 20px;
-    width: 110px;
-    height: 34px;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
+}
 
-  .parent__mainblock_card_pokemonsqnt{
-    display: flex;
-    position: absolute;
-    top: 83px;
-    left: 237px;
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    border-radius: 20px;
-    width: 127px;
-    height: 34px;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
+.parent__mainblock_card_levels {
+  display: flex;
+  position: absolute;
+  top: 83px;
+  left: 121px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 20px;
+  width: 99px;
+  height: 32px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 
-  .parent__mainblock_card_parameters_power{
-    border-radius: 20px;
-    width: 76px;
-    height: 33px;
-    padding: 7px 0 0 0;
-    text-align: center;
-  }
+.parent__mainblock_card_pokemonsqnt {
+  display: flex;
+  position: absolute;
+  top: 83px;
+  left: 232px;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 20px;
+  width: 102px;
+  height: 34px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
 
-  .parent__mainblock_card_trainer_id{
-    display: flex;
-    column-gap: 9px;
-    position: absolute;
-    top: 148px;
-    left: 122px;
-  }
-  .parent__mainblock_card_trainer_id_number{
-    font-family: Inter, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #222222;
-  }
+.parent__mainblock_card_parameters_power {
+  border-radius: 20px;
+  width: 76px;
+  height: 33px;
+  padding: 7px 0 0 0;
+  text-align: center;
+}
 
-  .parent__mainblock_card_trainer_id_copy{
-    cursor: pointer;
-  }
+.parent__mainblock_card_trainer_id {
+  display: flex;
+  column-gap: 9px;
+  position: absolute;
+  top: 148px;
+  left: 122px;
+}
 
-  .level1{
-    color: #45D221;
-    border: 1px solid #45D221;
-  }
+.parent__mainblock_card_trainer_id_number {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
 
-  .level2{
-    color: #BB2DED;
-    border: 1px solid #BB2DED;
-  }
-  .level3plus{
-    color: #ED2D2D;
-    border: 1px solid #ED2D2D;
-  }
+.parent__mainblock_card_trainer_id_copy {
+  cursor: pointer;
+}
 
-  .qnt1{
-    color: #45D221;
-    border: 1px solid #45D221;
-  }
+.level1 {
+  color: #45D221;
+  border: 1px solid #45D221;
+}
 
-  .qnt2{
-    color: #BB2DED;
-    border: 1px solid #BB2DED;
-  }
-  .qnt3plus{
-    color: #ED2D2D;
-    border: 1px solid #ED2D2D;
-  }
+.level2 {
+  color: #BB2DED;
+  border: 1px solid #BB2DED;
+}
 
-  .disabled_card{
-    color: #607D8B;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
+.level3plus {
+  color: #ED2D2D;
+  border: 1px solid #ED2D2D;
+}
 
-  .disabled_card_border{
-    border: 1px solid #607D8B;
+.qnt0 {
+  div {
+opacity: 0.2;
   }
+}
 
-  .disabled_card_base{
-    backdrop-filter: blur(50px);
-    opacity: 0.6;
+.qnt1 {
+  div:nth-of-type(2) {
+    opacity: 0.2;
   }
+  div:nth-of-type(3) {
+    opacity: 0.2;
+}}
+
+.qnt2 {
+  div:nth-of-type(3) {
+    opacity: 0.2;
+  }
+}
+
+
+.disabled_card {
+  color: #607D8B;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.disabled_card_border {
+  border: 1px solid #607D8B;
+}
+
+.disabled_card_base {
+  backdrop-filter: blur(50px);
+  opacity: 0.6;
+}
+///////////////
+
+/* меню силы (левое)*/
+#menuToggle__sorting_power1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0 12px 14px;
+  width: 213px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-left: 315px;
+
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #090A0A;
+}
+
+#menuToggle__sorting_power1 > input {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* меню силы (левое). Чекбокс*/
+#menuToggle__sorting_power1 input:checked~#sorting_power1 {
+
+  display: flex;
+}
+
+#menuToggle__sorting_power1 input:checked~.checkbox_power_figure1 {
+  transform: rotate(180deg);
+}
+
+.checkbox_power_figure1 {
+  background-image: url(../img/Vector.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  //transform: rotate(180deg);
+}
+
+////////////////
+///////////////
+
+/* меню силы (левое)*/
+#menuToggle__sorting_power1pok {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0 12px 14px;
+  width: 213px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin-left: 315px;
+
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #090A0A;
+}
+
+#menuToggle__sorting_power1pok > input {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* меню силы (левое). Чекбокс*/
+#menuToggle__sorting_power1pok input:checked~#sorting_power1pok {
+
+  display: flex;
+}
+
+#menuToggle__sorting_power1pok input:checked~.checkbox_power_figure1pok {
+  transform: rotate(180deg);
+}
+
+.checkbox_power_figure1pok {
+  background-image: url(../img/Vector.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  //transform: rotate(180deg);
+}
+
+////////////////

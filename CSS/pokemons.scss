@@ -110,8 +110,15 @@ body{
   flex-grow: 0;
 }
 
-  #form_authorization{
-    display: contents;
+  .parent__mainblock_card_link{
+    position: absolute;
+    width: 280px;
+    height: 310px;
+    left: 4px;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 40px;
   }
 
   #id_trainer_form{
@@ -266,19 +273,18 @@ body{
 
   #menuToggle__sorting_power > input {
     display: flex;
-    margin-left: 148px;
-    width: 50px;
-    height: 35px;
+    width: 197px;
+    height: 43px;
     position: absolute;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
+    transform: translateX(-7px);
   }
 
   /* меню силы (левое). Чекбокс*/
   #menuToggle__sorting_power input:checked~#sorting_power {
-  //  transform: translate(-39px, -37px);
-  //  background: #FFFFFF;
+
     display: flex;
   }
 
@@ -287,6 +293,59 @@ body{
   }
 
 
+
+  ///////////////
+
+  /* меню силы (левое)*/
+  #menuToggle__sorting_power1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0 12px 14px;
+    width: 213px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 315px;
+
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #090A0A;
+  }
+
+  #menuToggle__sorting_power1 > input {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  /* меню силы (левое). Чекбокс*/
+  #menuToggle__sorting_power1 input:checked~#sorting_power1 {
+
+    display: flex;
+  }
+
+  #menuToggle__sorting_power1 input:checked~.checkbox_power_figure1 {
+    transform: rotate(180deg);
+  }
+
+  .checkbox_power_figure1 {
+    background-image: url(../img/Vector.svg);
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    //transform: rotate(180deg);
+  }
+
+  ////////////////
 
   .checkbox_power_figure {
     background-image: url(../img/Vector.svg);
@@ -380,8 +439,8 @@ body{
     text-align: center;
     font-family: Inter, serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 16px;
   }
 
