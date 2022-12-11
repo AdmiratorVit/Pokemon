@@ -4,47 +4,52 @@
     <meta charset="UTF-8">
     <title>Pokemons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="stylesheet" href="./CSS/pokemons.css">
-    <link rel="stylesheet" href="./CSS/filter.css">
-    <link rel="stylesheet" href="./CSS/sorting_power.css">
+    <link rel="stylesheet" href="./CSS/main_new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="parent">
-    <header class="header">
-        <div class="top_menu">
-            <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
-            <div class="top_menu_pokemons">
-                <a href="pokemons.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Покемоны</div>
-                </a>
+    <div class="content">
+        <header class="header">
+            <div class="top_menu">
+                <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
+                <div class="top_menu_pokemons">
+                    <a href="pokemons.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Покемоны</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Тренеры</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/shop.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Магазин</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons ID">
+                    <span class="id_txt">ID&nbsp;</span>
+                    <span class="id_number">1125</span>
+                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Ash_anime_Journeys%206.svg"></figure>
+                </div>
+                <div class="top_menu_exit">
+                    <a href="#" class="top_menu_exit_btn">
+                        <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
+                    </a>
+                </div>
             </div>
-
-            <div class="top_menu_pokemons">
-                <a href="trainers.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Тренеры</div>
-                </a>
-            </div>
-            <div class="top_menu_id">
-                <span class="id_txt">ID</span>
-                <span class="id_number">92312421</span>
-            </div>
-            <div class="top_menu_exit">
-                <a href="#" class="top_menu_exit_btn">
-                    <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
-                </a>
-            </div>
-        </div>
         <div class="sub_menu">
             <div class="sub_menu_title">Покемоны</div>
 
-            <div id="menuToggle__sorting_power">По убыванию силы
+            <div id="menuToggle__sorting_power">Сначала новые
                 <input type="checkbox"/>
                 <figure class="checkbox_power_figure"></figure>
 
@@ -54,11 +59,15 @@
                         <div class="radio-group">
                             <ul class="sorting_power__items">
                                 <li>
-                                    <label for="desc">По возрастанию силы</label><input type="radio" id="desc"
+                                    <label for="desc">Сначала новые</label><input type="radio" id="new_first"
                                                                                         name="selector" checked>
                                 </li>
                                 <li>
-                                    <label for="asc">По убыванию силы</label><input type="radio" id="asc"
+                                    <label for="desc">По убыванию атаки</label><input type="radio" id="desc"
+                                                                                        name="selector">
+                                </li>
+                                <li>
+                                    <label for="asc">По возрастанию атаки</label><input type="radio" id="asc"
                                                                                     name="selector">
                                 </li>
                                 <li>
@@ -70,14 +79,10 @@
                     </form>
                 </div>
             </div>
-
-
             <div class="sub_menu_search">
                 <input id="search" type="search" name="search" required placeholder="Поиск"/>
                 <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
             </div>
-
-
             <div id="menuToggle">
                 <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
                 <input type="checkbox"/>
@@ -131,98 +136,144 @@
         </div>
     </header>
 
-    <div class="parent__mainblock">
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/pokemon_PNG52.svg">
+    <div class="parent__mainblock_pokemon">
+        <div class="parent__mainblock_card_pokemon">
+            <div class="parent__mainblock_card_img_pokemon">
+                <img class="img_pokemon_card" src="img/pokemon_PNG27.svg">
             </div>
-            <div class="parent__mainblock_card_name">Бульбазавр</div>
-            <div class="parent__mainblock_card_parameters">
-                <div class="parent__mainblock_card_parameters_power power1">Сила 1</div>
-                <div class="parent__mainblock_card_parameters_badge"></div>
-            </div>
-            <div class="parent__mainblock_card_pokemon_id">
-                <div class="parent__mainblock_card_pokemon_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-            <a class="parent__mainblock_card_link" href="one_pokemon.html"></a>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/pokemon_PNG27.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Пикачу</div>
-            <div class="parent__mainblock_card_parameters">
-                <div class="parent__mainblock_card_parameters_power power2">Сила 2</div>
-                <div class="parent__mainblock_card_parameters_badge"></div>
-            </div>
-            <div class="parent__mainblock_card_pokemon_id">
-                <div class="parent__mainblock_card_pokemon_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-            <a class="parent__mainblock_card_link" href="one_pokemon.html"></a>
-        </div>
-        <div class="parent__mainblock_card disabled_card_base">
-            <div class="parent__mainblock_card_img disabled_card">
-                <img src="img/pokemon_PNG34.svg">
-            </div>
-            <div class="parent__mainblock_card_name disabled_card">Тотодайл</div>
-            <div class="parent__mainblock_card_parameters">
-                <div class="parent__mainblock_card_parameters_power power2 disabled_card disabled_card_border">Сила 2
+            <div class="parent__mainblock_card_name_pokemon">Жестезавр</div>
+
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
                 </div>
-                <div class="parent__mainblock_card_parameters_badge">
+                <div class="parent__mainblock_card_parameters_badge disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
                     <figure><img src="./img/skull.svg"></figure>
                 </div>
-            </div>
-            <div class="parent__mainblock_card_pokemon_id">
-                <div class="parent__mainblock_card_pokemon_id_number disabled_card">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/copy.svg"></figure>
+                <div class="parent__mainblock_card_parameters_power power3plus">Атака 4</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">1008</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                    <figure class="parent__mainblock_card_pokemon_id_copy_pokemon"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
                 </a>
-            </div>
-            <a class="parent__mainblock_card_link" href="one_pokemon.html"></a>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_4830945.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Кроконав</div>
-            <div class="parent__mainblock_card_parameters">
-                <div class="parent__mainblock_card_parameters_power power3plus">Сила 16</div>
-                <div class="parent__mainblock_card_parameters_badge">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
                 </div>
             </div>
-            <div class="parent__mainblock_card_pokemon_id">
-                <div class="parent__mainblock_card_pokemon_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-            <a class="parent__mainblock_card_link" href="one_pokemon.html"></a>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
         </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_4830945.svg">
+        <div class="parent__mainblock_card_pokemon">
+            <div class="parent__mainblock_card_img_pokemon">
+                <img class="img_pokemon_card" src="img/pokemon_PNG52.svg">
             </div>
-            <div class="parent__mainblock_card_name">Кроконав</div>
-            <div class="parent__mainblock_card_parameters">
-                <div class="parent__mainblock_card_parameters_power power3plus">Сила 10</div>
-                <div class="parent__mainblock_card_parameters_badge">
+            <div class="parent__mainblock_card_name_pokemon">Пукапука</div>
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
                     <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
                 </div>
+                <div class="parent__mainblock_card_parameters_badge disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure><img src="./img/skull.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_power power1">Атака 5</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">1007</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                        <figure class="parent__mainblock_card_pokemon_id_copy_pokemon"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    </a>
+                </div>
             </div>
-            <div class="parent__mainblock_card_pokemon_id">
-                <div class="parent__mainblock_card_pokemon_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
+        </div>
+
+        <div class="parent__mainblock_card_pokemon disabled_card_base"><!-- для выключенных карточек нужно добавить стиль disabled_card_base -->
+            <div class="parent__mainblock_card_img_pokemon disabled_card"><!-- для выключенных карточек нужно добавить стиль disabled_card -->
+                <img class="img_pokemon_card" src="img/pokemon_PNG34.svg">
             </div>
-            <a class="parent__mainblock_card_link" href="one_pokemon.html"></a>
+            <div class="parent__mainblock_card_name_pokemon disabled_card">Бульбазавр</div><!-- для выключенных карточек нужно добавить стиль disabled_card -->
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_badge"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure><img src="./img/skull.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_power power1 disabled_card disabled_card_border">Атака 5</div><!-- для выключенных карточек нужно добавить стиль disabled_card И disabled_card_border-->
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon disabled_card">1007</div><!-- для выключенных карточек нужно добавить стиль disabled_card -->
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                        <figure class="parent__mainblock_card_pokemon_id_copy_pokemon disabled"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    </a>
+                </div>
+            </div>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
+        </div>
+
+        <div class="parent__mainblock_card_pokemon">
+            <div class="parent__mainblock_card_img_pokemon">
+                <img class="img_pokemon_card" src="img/kindpng_4830945.svg">
+            </div>
+            <div class="parent__mainblock_card_name_pokemon">Бульби</div>
+
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_badge disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure><img src="./img/skull.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_power power1">Атака 5</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">1005</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                        <figure class="parent__mainblock_card_pokemon_id_copy_pokemon"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    </a>
+                </div>
+            </div>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
+        </div>
+        <div class="parent__mainblock_card_pokemon">
+            <div class="parent__mainblock_card_img_pokemon">
+                <img class="img_pokemon_card" src="img/kindpng_4830945.svg">
+            </div>
+            <div class="parent__mainblock_card_name_pokemon">Бульби</div>
+
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_badge disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure><img src="./img/skull.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_power power1">Атака 5</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">1005</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                        <figure class="parent__mainblock_card_pokemon_id_copy_pokemon"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    </a>
+                </div>
+            </div>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
+        </div>
+        <div class="parent__mainblock_card_pokemon">
+            <div class="parent__mainblock_card_img_pokemon">
+                <img class="img_pokemon_card" src="img/kindpng_4830945.svg">
+            </div>
+            <div class="parent__mainblock_card_name_pokemon">Бульби</div>
+
+            <div class="parent__mainblock_card_parameters_pokemon">
+                <div class="parent__mainblock_card_parameters_badge_pokemon disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure class="parent__mainblock_card_pokemon_id_copy"><img src="./img/pngwing%201.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_badge disabled"> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    <figure><img src="./img/skull.svg"></figure>
+                </div>
+                <div class="parent__mainblock_card_parameters_power power1">Атака 5</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">1005</div>
+                <div class="parent__mainblock_card_pokemon_id_number_pokemon">
+                    <a href="#">
+                        <figure class="parent__mainblock_card_pokemon_id_copy_pokemon"><img src="./img/copy.svg"></figure> <!-- чтобы выключить, нужно добавить стиль disabled -->
+                    </a>
+                </div>
+            </div>
+            <a class="parent__mainblock_card_link_pokemon" href="one_pokemon.html"></a>
         </div>
     </div>
     <div class="parent__mainblock_load_more">
@@ -231,7 +282,7 @@
         </form>
     </div>
     <div class="parent__bottom_line">
-        <div class="bottom_line"></div>
+        <div class="bottom_line for_pokemons"></div>
     </div>
     <div class="footer">
         <div class="footer_docs">
@@ -240,9 +291,12 @@
                 <div class="footer_docs_btn_txt">Документация</div>
             </a>
         </div>
-        <div class="QAStudio">
-            <div class="QA">QA</div>
-            <div class="Studio">Studio</div>
+        <div class="QA_ver">
+            <div class="QAStudio">
+                <div class="QA">QA</div>
+                <div class="Studio">Studio</div>
+            </div>
+            <div class="version">v1.05</div>
         </div>
         <div class="footer_rules">
             <a href="#" class="footer_rules_btn">
@@ -255,6 +309,6 @@
         <div class="gradient_background"></div>
     </div>
 </div>
-
+</div>
 </body>
 </html>

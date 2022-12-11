@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Pass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main_new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+</head>
+<body class="no_scroll">
+<div class="parent">
+    <div class="content">
+        <div class="parent__block1">
+            <div class="parent__block1_form">
+                <form id="form_authorization" action="#" method="post">
+                    <div class="parent__block1_title">Битва покемонов</div>
+                    <div class="recover">
+                        <div class="create_newpass_label">Создание нового пароля</div>
+                        <div class="create_newpass_message"><p>Придумайте новый пароль. Минимум 6 символов, 1 заглавная буква и 1 цифра</div>
+                    </div>
+                    <div class="inputBox">
+                        <input class="id_trainer_form_1" type="email" name="email" required> <!-- если поле с ошибкой, то добавить стиль error_border-->
+                    <span>Новый пароль</span>
+                    </div>
+                    <div class="vosst">
+                        <div class="signup_error disabled" id="not_pass">Введите пароль</div><!-- если поле с ошибкой, то убрать стиль disabled -->
+                        <div class="signup_error disabled" id="not_req">Новый пароль не соответствует требованиям.
+                            Минимум 6 символов, 1 заглавная буква и 1 цифра</div><!-- если поле с ошибкой, то убрать стиль disabled -->
+                    </div>
+                    <div class="inputBox">
+                        <input class="id_trainer_form_2" type="password" name="new_pass" required> <!-- если поле с ошибкой, то добавить стиль error_border-->
+                        <span id="pass_txt">Повторите новый пароль</span>
+                    </div>
+                    <div class="vosst">
+                        <div class="signup_error disabled">Пароли не совпадают</div><!-- если поле с ошибкой, то убрать стиль disabled -->
+                    </div>
+                    <div><input class="submit_authorization" type="submit" value="Сохранить пароль"></div>
+                </form>
+                <div class="signup"><a href="#">Войти</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_index">
+        <div class="QA_ver">
+            <div class="QAStudio">
+                <div class="QA">QA</div>
+                <div class="Studio">Studio</div>
+            </div>
+            <div class="version">v1.05</div>
+        </div>
+    </div>
+    <div class="parent_gradient_background">
+        <div class="gradient_background"></div>
+    </div>
+</div>
+</body>
+</html>

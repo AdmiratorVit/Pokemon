@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3DS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main_new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+</head>
+<body class="payment">
+<div class="parent">
+    <div class="content">
+        <div class="header_pay">
+            <div class="logo">
+                <div class="img">
+                    <figure><img src="./img/pngwing%201.svg"></figure>
+                </div>
+                <div class="txt_wrapper">
+                    <div class="logo_txt">Пикачунькофф</div>
+                    <div class="logo_txt_2">касса</div>
+                </div>
+            </div>
+        </div>
+        <div class="parent__block_payment">
+            <div class="payment_summary_wrapper">
+                <div class="chk_pay_summary"><input id="paychk" type="checkbox"/>
+                    <figure class="checkbox_payment"></figure>
+                </div>
+                <div class="payment_summary">
+                    <div>30 000 ₽</div>
+                </div>
+            </div>
+            <div class="payment_form">
+                <form id="payment_form" action="#" method="post">
+                    <div class="payment_label">Подтверждение покупки</div>
+                    <div id="push" class="inputBox inputs pays">
+                        <input class="payment_fields card_number" type="text" name="name" required>
+                        <!-- если поле с ошибкой, то добавить стиль error_border-->
+                        <span class="placeH_payment">Код из пуша или СМС</span>
+                        <span class="placeH_payment_data">00000</span>
+                    </div>
+                    <div class="vosst last disabled"><!-- если поле с ошибкой, то убрать стиль disabled -->
+                        <div class="signup_error disabled" id="bad_push">Не совпадает с отправленным кодом</div>
+                        <!-- если поле с ошибкой, то убрать стиль disabled -->
+                    </div>
+                    <div class="bottom_3ds_wraper">
+                        <div class="for3ds_links"><a id="link1" href="#">Отправим код повторно через 45 секунд</a></div>
+                        <div class="for3ds_links"><a id="link2" href="#">Отменить</a></div>
+                    </div>
+                    <div><input id="for3DS" class="submit_authorization payment" type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,3 +1,4 @@
+/* Trainers scss */
 /* Desktop */
 //@media screen and (min-width: 1280px){
 //}
@@ -314,6 +315,7 @@ body {
     width: 389px;
     height: 193px;
     background: #ffffff;
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 40px;
@@ -449,8 +451,8 @@ opacity: 0.2;
 
 .disabled_card {
   color: #607D8B;
-  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .disabled_card_border {
@@ -458,6 +460,7 @@ opacity: 0.2;
 }
 
 .disabled_card_base {
+  -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   opacity: 0.6;
 }

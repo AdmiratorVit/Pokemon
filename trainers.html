@@ -4,251 +4,297 @@
     <meta charset="UTF-8">
     <title>Trainers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="stylesheet" href="./CSS/trainers.css">
-    <link rel="stylesheet" href="./CSS/filter.css">
-    <link rel="stylesheet" href="./CSS/sorting_power.css">
+    <link rel="stylesheet" href="./CSS/main_new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="parent">
-    <header class="header">
-        <div class="top_menu">
-            <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
-            <div class="top_menu_pokemons">
-                <a href="pokemons.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Покемоны</div>
-                </a>
-            </div>
-            <div class="top_menu_pokemons">
-                <a href="trainers.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Тренеры</div>
-                </a>
-            </div>
-            <div class="top_menu_id">
-                <span class="id_txt">ID</span>
-                <span class="id_number">92312421</span>
-            </div>
-            <div class="top_menu_exit">
-                <a href="#" class="top_menu_exit_btn">
-                    <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="sub_menu">
-            <div class="sub_menu_title">Тренеры</div>
+    <div class="content">
+        <header class="header">
+            <div class="top_menu">
+                <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
+                <div class="top_menu_pokemons">
+                    <a href="pokemons.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Покемоны</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Тренеры</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/shop.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Магазин</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons ID">
+                    <span class="id_txt">ID&nbsp;</span>
+                    <span class="id_number">1125</span>
+                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Ash_anime_Journeys%206.svg"></figure>
+                </div>
+                <div class="top_menu_exit">
+                    <a href="#" class="top_menu_exit_btn">
+                        <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
+                    </a>
+                </div>
 
-            <div id="menuToggle__sorting_power">По убыванию силы
-                <input type="checkbox"/>
-                <figure class="checkbox_power_figure"></figure>
 
-                <div id="sorting_power">
-                    <div class="sorting_power_title">Сортировка</div>
-                    <form action="#">
-                        <div class="radio-group">
-                            <ul class="sorting_power__items">
-                                <li>
-                                    <label for="desc">По возрастанию силы</label><input type="radio" id="desc"
-                                                                                        name="selector" checked>
-                                </li>
-                                <li>
-                                    <label for="asc">По убыванию силы</label><input type="radio" id="asc"
-                                                                                    name="selector">
-                                </li>
-                                <li>
-                                    <label for="abc">По алфавиту</label>
-                                    <input type="radio" id="abc" name="selector">
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
             </div>
-            <div class="sub_menu_search">
-                <input id="search" type="search" name="search" required placeholder="Поиск"/>
-                <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
-            </div>
-            <div id="menuToggle">
-                <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
-                <input type="checkbox"/>
-                <figure class="checkbox_figure"></figure>
-                <div id="filter_power">
-                    <div class="filter_power_title">Фильтры</div>
-                    <form action="#">
-                        <div>
-                            <a href="#" class="сlear_filter_btn">
-                                <div class="сlear_filter_btn_txt">Сбросить</div>
-                                <figure class="сlear_filter_btn_img"><img src="./img/Frame%2050.svg"></figure>
-                            </a>
-                        </div>
-                        <div>
-                            <ul class="filter_power__items">
-                                <li>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option1" name="selector" type="checkbox"/>
-                                        <label for="option1">1</label>
-                                    </div>
+            <div class="sub_menu">
+                <div class="sub_menu_title">Тренеры</div>
 
-                                    <div class="inputGroup">
-                                        <input class="in" id="option2" name="selector" type="checkbox"/>
-                                        <label for="option2">2</label>
-                                    </div>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option3" name="selector" type="checkbox"/>
-                                        <label class="lll" for="option3">3</label>
-                                    </div>
+                <div id="menuToggle__sorting_power" class="for_trainers_menu">По убыванию уровня
+                    <input type="checkbox"/>
+                    <figure class="checkbox_power_figure"></figure>
 
-                                    <div class="inputGroup">
-                                        <input class="in" id="option4" name="selector" type="checkbox"/>
-                                        <label for="option4">4</label>
-                                    </div>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option5" name="selector" type="checkbox"/>
-                                        <label for="option5">5</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
+                    <div id="sorting_power">
+                        <div class="sorting_power_title">Сортировка</div>
+                        <form action="#">
+                            <div class="radio-group">
+                                <ul class="sorting_power__items">
+                                    <li>
+                                        <label for="desc">Сначала новые</label><input type="radio" id="new_first"
+                                                                                      name="selector">
+                                    </li>
+                                    <li>
+                                        <label for="desc">По убыванию уровня</label><input type="radio" id="desc"
+                                                                                            name="selector" checked>
+                                    </li>
+                                    <li>
+                                        <label for="asc">По возрастанию уровня</label><input type="radio" id="asc"
+                                                                                        name="selector">
+                                    </li>
+                                    <li>
+                                        <label for="abc">По алфавиту</label>
+                                        <input type="radio" id="abc" name="selector">
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    <div class="parent__mainblock">
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/Ash_anime_Journeys%201.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Эш</div>
-            <div class="parent__mainblock_card_levels level3plus">Уровень 5</div>
-            <div class="parent__mainblock_card_pokemonsqnt qnt0"> <!--Здесь qntХ - это сколько мячиков зажигать. Для трех мячиков стиль не ставим -->
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
+                <div class="sub_menu_search for_trainers">
+                    <input id="search" type="search" name="search" required placeholder="Поиск"/>
+                    <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
                 </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-            </div>
-            <div class="parent__mainblock_card_trainer_id">
-                <div class="parent__mainblock_card_trainer_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_1638223%201.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Эш</div>
-            <div class="parent__mainblock_card_levels level3plus">Уровень 5</div>
-            <div class="parent__mainblock_card_pokemonsqnt qnt1">
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-            </div>
-            <div class="parent__mainblock_card_trainer_id">
-                <div class="parent__mainblock_card_trainer_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_241480.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Бин</div>
-            <div class="parent__mainblock_card_levels level2">Уровень 5</div>
-            <div class="parent__mainblock_card_pokemonsqnt qnt2">
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-            </div>
-            <div class="parent__mainblock_card_trainer_id">
-                <div class="parent__mainblock_card_trainer_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_241482.svg">
-            </div>
-            <div class="parent__mainblock_card_name">Лара</div>
-            <div class="parent__mainblock_card_levels">Уровень 5</div>
-            <div class="parent__mainblock_card_pokemonsqnt">
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-            </div>
-            <div class="parent__mainblock_card_trainer_id">
-                <div class="parent__mainblock_card_trainer_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="parent__mainblock_card">
-            <div class="parent__mainblock_card_img">
-                <img src="img/kindpng_247993%20(1).svg">
-            </div>
-            <div class="parent__mainblock_card_name">Эш</div>
-            <div class="parent__mainblock_card_levels level2">Уровень 5</div>
-            <div class="parent__mainblock_card_pokemonsqnt qnt2">
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-                <div>
-                    <figure><img src="./img/pngwing%201.svg"></figure>
-                </div>
-            </div>
-            <div class="parent__mainblock_card_trainer_id">
-                <div class="parent__mainblock_card_trainer_id_number">391057782</div>
-                <a href="#">
-                    <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
-                </a>
-            </div>
-        </div>
-    </div>
+                <div id="menuToggle">
+                    <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
+                    <input type="checkbox"/>
+                    <figure class="checkbox_figure"></figure>
+                    <div id="filter_power">
+                        <div class="filter_power_title">Фильтры</div>
+                        <form action="#" class="filter_numbers">
+<!--                            <div>-->
+<!--                                <a href="#" class="сlear_filter_btn">-->
+<!--                                    <div class="сlear_filter_btn_txt">Сбросить</div>-->
+<!--                                    <figure class="сlear_filter_btn_img"><img src="./img/Frame%2050.svg"></figure>-->
+<!--                                </a>-->
+<!--                            </div>-->
+                            <div class="filter_line"></div>
+                            <div class="filter_level_txt">Уровень</div>
+                            <div>
+                                <ul class="filter_power__items">
+                                    <li>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option1" name="selector" type="checkbox"/>
+                                            <label for="option1">1</label>
+                                        </div>
 
-    <div class="parent__mainblock_load_more">
-        <form action="#" name="load_more">
-            <button class="parent__mainblock_load_more_button">Загрузить еще</button>
-        </form>
-    </div>
-    <div class="parent__bottom_line">
-        <div class="bottom_line"></div>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option2" name="selector" type="checkbox"/>
+                                            <label for="option2">2</label>
+                                        </div>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option3" name="selector" type="checkbox"/>
+                                            <label class="lll" for="option3">3</label>
+                                        </div>
+
+                                        <div class="inputGroup">
+                                            <input class="in" id="option4" name="selector" type="checkbox"/>
+                                            <label for="option4">4</label>
+                                        </div>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option5" name="selector" type="checkbox"/>
+                                            <label for="option5">5</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="parent__mainblock">
+            <div class="parent__mainblock_card">
+                <div class="parent__mainblock_card_img">
+                    <img src="img/Ash_anime_Journeys%201.svg">
+                </div>
+                <div class="name_and_kubok">
+                    <div class="parent__mainblock_card_name">Эш</div>
+                    <div class="parent__mainblock_card_kubok">
+                        <figure><img src="./img/trophy%201.svg"></figure>
+                    </div> <!--если нужно выключить, добавить стиль "disabled"-->
+                </div>
+                <div class="parent__mainblock_card_levels level3plus">Уровень 5</div>
+                <div class="parent__mainblock_card_pokemonsqnt qnt0">
+                    <!--Здесь qntХ - это сколько мячиков зажигать. Для трех мячиков стиль не ставим -->
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                </div>
+                <div class="parent__mainblock_card_trainer_id">
+                    <div class="parent__mainblock_card_trainer_id_number">1005</div>
+                    <a href="#">
+                        <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
+                    </a>
+                </div>
+                <a class="parent__mainblock_card_link" href="one_trainer.html"></a>
+            </div>
+            <div class="parent__mainblock_card">
+                <div class="parent__mainblock_card_img">
+                    <img src="img/kindpng_1638223%201.svg">
+                </div>
+                <div class="name_and_kubok">
+                    <div class="parent__mainblock_card_name">Макс</div>
+                    <div class="parent__mainblock_card_kubok">
+                        <figure><img src="./img/trophy%201.svg"></figure>
+                    </div> <!--если нужно выключить, добавить стиль "disabled"-->
+                </div>
+                <div class="parent__mainblock_card_levels level3plus">Уровень 6</div>
+                <div class="parent__mainblock_card_pokemonsqnt qnt1">
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                </div>
+                <div class="parent__mainblock_card_trainer_id">
+                    <div class="parent__mainblock_card_trainer_id_number">1106</div>
+                    <a href="#">
+                        <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
+                    </a>
+                </div>
+                <a class="parent__mainblock_card_link" href="one_trainer.html"></a>
+            </div>
+            <div class="parent__mainblock_card">
+                <div class="parent__mainblock_card_img">
+                    <img src="img/kindpng_241480.svg">
+                </div>
+                <div class="name_and_kubok">
+                    <div class="parent__mainblock_card_name">Бин</div>
+                    <div class="parent__mainblock_card_kubok">
+                        <figure><img src="./img/trophy%201.svg"></figure>
+                    </div> <!--если нужно выключить, добавить стиль "disabled"-->
+                </div>
+                <div class="parent__mainblock_card_levels level2">Уровень 2</div>
+                <div class="parent__mainblock_card_pokemonsqnt qnt2">
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                </div>
+                <div class="parent__mainblock_card_trainer_id">
+                    <div class="parent__mainblock_card_trainer_id_number">1009</div>
+                    <a href="#">
+                        <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
+                    </a>
+                </div>
+                <a class="parent__mainblock_card_link" href="one_trainer.html"></a>
+            </div>
+            <div class="parent__mainblock_card">
+                <div class="parent__mainblock_card_img">
+                    <img src="img/kindpng_241482.svg">
+                </div>
+                <div class="name_and_kubok">
+                    <div class="parent__mainblock_card_name">Лара</div>
+                    <div class="parent__mainblock_card_kubok">
+                        <figure><img src="./img/trophy%201.svg"></figure>
+                    </div> <!--если нужно выключить, добавить стиль "disabled"-->
+                </div>
+                <div class="parent__mainblock_card_levels level3plus">Уровень 4</div>
+                <div class="parent__mainblock_card_pokemonsqnt">
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                </div>
+                <div class="parent__mainblock_card_trainer_id">
+                    <div class="parent__mainblock_card_trainer_id_number">1007</div>
+                    <a href="#">
+                        <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
+                    </a>
+                </div>
+                <a class="parent__mainblock_card_link" href="one_trainer.html"></a>
+            </div>
+            <div class="parent__mainblock_card">
+                <div class="parent__mainblock_card_img">
+                    <img src="img/kindpng_247993%20(1).svg">
+                </div>
+                <div class="name_and_kubok">
+                    <div class="parent__mainblock_card_name">Алекс</div>
+                    <div class="parent__mainblock_card_kubok">
+                        <figure><img src="./img/trophy%201.svg"></figure>
+                    </div> <!--если нужно выключить, добавить стиль "disabled"-->
+                </div>
+                <div class="parent__mainblock_card_levels level1">Уровень 1</div>
+                <div class="parent__mainblock_card_pokemonsqnt qnt2">
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                    <div>
+                        <figure><img src="./img/pngwing%201.svg"></figure>
+                    </div>
+                </div>
+                <div class="parent__mainblock_card_trainer_id">
+                    <div class="parent__mainblock_card_trainer_id_number">1004</div>
+                    <a href="#">
+                        <figure class="parent__mainblock_card_trainer_id_copy"><img src="./img/copy.svg"></figure>
+                    </a>
+                </div>
+                <a class="parent__mainblock_card_link" href="one_trainer.html"></a>
+            </div>
+        </div>
+
+        <!--    <div class="parent__mainblock_load_more">-->
+        <!--        <form action="#" name="load_more">-->
+        <!--            <button class="parent__mainblock_load_more_button">Загрузить еще</button>-->
+        <!--        </form>-->
+        <!--    </div>-->
+        <div class="parent__bottom_line">
+            <div class="bottom_line for_trainers"></div>
+        </div>
     </div>
     <div class="footer">
         <div class="footer_docs">
@@ -257,9 +303,12 @@
                 <div class="footer_docs_btn_txt">Документация</div>
             </a>
         </div>
-        <div class="QAStudio">
-            <div class="QA">QA</div>
-            <div class="Studio">Studio</div>
+        <div class="QA_ver">
+            <div class="QAStudio">
+                <div class="QA">QA</div>
+                <div class="Studio">Studio</div>
+            </div>
+            <div class="version">v1.05</div>
         </div>
         <div class="footer_rules">
             <a href="#" class="footer_rules_btn">

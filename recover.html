@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pokemons Enter</title>
+    <title>Recover Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/main_new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,30 +19,20 @@
             <div class="parent__block1_form">
                 <form id="form_authorization" action="#" method="post">
                     <div class="parent__block1_title">Битва покемонов</div>
-
+                    <div class="recover">
+                        <div class="recover_pass_label">Восстановление пароля</div>
+                        <div class="recover_pass_description">Введите почту, которую указывали при регистрации</div>
+                    </div>
                     <div class="inputBox">
-                        <input class="id_trainer_form_1" type="email" name="email" required>
-                    <!-- если поле с ошибкой, то добавить стиль error_border-->
+                        <input class="id_trainer_form_1" type="email" name="email" required> <!-- если поле с ошибкой, то добавить стиль error_border-->
                     <span>Почта</span>
                     </div>
                     <div class="vosst">
                         <div class="signup_error disabled">Введите почту</div><!-- если поле с ошибкой, то убрать стиль disabled -->
                     </div>
-                    <div class="inputBox">
-                        <input class="id_trainer_form_2" type="password" name="pass" required>
-                        <!-- если поле с ошибкой, то добавить стиль error_border-->
-                        <span id="pass_txt">Пароль</span>
-                    </div>
-                    <div class="vosst">
-                        <div class="signup_error disabled">Введите пароль</div><!-- если поле с ошибкой, то убрать стиль disabled -->
-                        <div class="signup_error disabled">Неверные логин пароль</div><!-- если поля с ошибкой, то убрать стиль disabled -->
-                    </div>
-                    <div class="vosst">
-                        <div class="signup"><a href="#">Восстановить</a></div>
-                    </div>
-                    <div><input class="submit_authorization" type="submit" value="Войти"></div>
+                    <div><input class="submit_authorization" type="submit" value="Восстановить"></div>
                 </form>
-                <div class="signup"><a href="#">Зарегистрироваться</a></div>
+                <div class="signup"><a href="#">Войти</a></div>
             </div>
         </div>
     </div>

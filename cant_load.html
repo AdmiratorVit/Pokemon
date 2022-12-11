@@ -2,130 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cant load</title>
+    <title>Can`t load Pokemons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/trainers.css">
-    <link rel="stylesheet" href="./CSS/filter.css">
-    <link rel="stylesheet" href="./CSS/sorting_power.css">
-    <link rel="stylesheet" href="./CSS/not_found.css">
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/main_new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <div class="parent">
-    <header class="header">
-        <div class="top_menu">
-            <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
-            <div class="top_menu_pokemons">
-                <a href="pokemons.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Покемоны</div>
-                </a>
+    <div class="content">
+        <header class="header">
+            <div class="top_menu">
+                <div class="top_menu_logo"><img src="./img/VS_menu.svg"></div>
+                <div class="top_menu_pokemons">
+                    <a href="pokemons.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/pngwing%201.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Покемоны</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Тренеры</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons">
+                    <a href="trainers.html" class="top_menu_pokemons_btn">
+                        <figure class="top_menu_pokemons_btn_img"><img src="./img/shop.svg"></figure>
+                        <div class="top_menu_pokemons_btn_txt">Магазин</div>
+                    </a>
+                </div>
+                <div class="top_menu_pokemons ID">
+                    <span class="id_txt">ID&nbsp;</span>
+                    <span class="id_number">1125</span>
+                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Ash_anime_Journeys%206.svg"></figure>
+                </div>
+                <div class="top_menu_exit">
+                    <a href="#" class="top_menu_exit_btn">
+                        <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
+                    </a>
+                </div>
             </div>
-            <div class="top_menu_pokemons">
-                <a href="trainers.html" class="top_menu_pokemons_btn">
-                    <figure class="top_menu_pokemons_btn_img"><img src="./img/Mask group.svg"></figure>
-                    <div class="top_menu_pokemons_btn_txt">Тренеры</div>
-                </a>
-            </div>
-            <div class="top_menu_id">
-                <span class="id_txt">ID</span>
-                <span class="id_number">92312421</span>
-            </div>
-            <div class="top_menu_exit">
-                <a href="#" class="top_menu_exit_btn">
-                    <figure class="top_menu_exit_btn_img"><img src="./img/log-out.svg"></figure>
-                </a>
-            </div>
-        </div>
-        <div class="sub_menu">
-            <div class="sub_menu_title">Покемоны</div>
+            <div class="sub_menu">
+                <div class="sub_menu_title">Покемоны</div>
+                <div id="menuToggle__sorting_power">Сначала новые
+                    <input type="checkbox"/>
+                    <figure class="checkbox_power_figure"></figure>
 
-            <div id="menuToggle__sorting_power">По убыванию силы
-                <input type="checkbox"/>
-                <figure class="checkbox_power_figure"></figure>
-
-                <div id="sorting_power">
-                    <div class="sorting_power_title">Сортировка</div>
-                    <form action="#">
-                        <div class="radio-group">
-                            <ul class="sorting_power__items">
-                                <li>
-                                    <label for="desc">По возрастанию силы</label><input type="radio" id="desc"
+                    <div id="sorting_power">
+                        <div class="sorting_power_title">Сортировка</div>
+                        <form action="#">
+                            <div class="radio-group">
+                                <ul class="sorting_power__items">
+                                    <li>
+                                        <label for="new">Сначала новые</label><input type="radio" id="new"
                                                                                         name="selector" checked>
-                                </li>
-                                <li>
-                                    <label for="asc">По убыванию силы</label><input type="radio" id="asc"
-                                                                                    name="selector">
-                                </li>
-                                <li>
-                                    <label for="abc">По алфавиту</label>
-                                    <input type="radio" id="abc" name="selector">
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
+                                    </li>
+                                    <li>
+                                        <label for="desc">По убыванию атаки</label><input type="radio" id="desc"
+                                                                                        name="selector">
+                                    </li>
+                                    <li>
+                                        <label for="asc">По возрастанию атаки</label><input type="radio" id="asc"
+                                                                                            name="selector">
+                                    </li>
+
+                                    <li>
+                                        <label for="abc">По алфавиту</label>
+                                        <input type="radio" id="abc" name="selector">
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="sub_menu_search">
+                    <input id="search" type="search" name="search" required placeholder="Поиск"/>
+                    <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
+                </div>
+                <div id="menuToggle">
+                    <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
+                    <input type="checkbox"/>
+                    <figure class="checkbox_figure"></figure>
+                    <div id="filter_power">
+                        <div class="filter_power_title">Фильтры</div>
+                        <form action="#">
+                            <div>
+                                <a href="#" class="сlear_filter_btn">
+                                    <div class="сlear_filter_btn_txt">Сбросить</div>
+                                    <figure class="сlear_filter_btn_img"><img src="./img/Frame%2050.svg"></figure>
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="filter_power__items">
+                                    <li>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option1" name="selector" type="checkbox"/>
+                                            <label for="option1">1</label>
+                                        </div>
+
+                                        <div class="inputGroup">
+                                            <input class="in" id="option2" name="selector" type="checkbox"/>
+                                            <label for="option2">2</label>
+                                        </div>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option3" name="selector" type="checkbox"/>
+                                            <label class="lll" for="option3">3</label>
+                                        </div>
+
+                                        <div class="inputGroup">
+                                            <input class="in" id="option4" name="selector" type="checkbox"/>
+                                            <label for="option4">4</label>
+                                        </div>
+                                        <div class="inputGroup">
+                                            <input class="in" id="option5" name="selector" type="checkbox"/>
+                                            <label for="option5">5</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="sub_menu_search">
-                <input id="search" type="search" name="search" required placeholder="Поиск"/>
-                <figure class="sub_menu_search_img"><img src="./img/search.svg"></figure>
-            </div>
-            <div id="menuToggle">
-                <div class="menuToggle_badge">2</div>  <!-- для выключения бэджика, добавить класс "disabled" -->
-                <input type="checkbox"/>
-                <figure class="checkbox_figure"></figure>
-                <div id="filter_power">
-                    <div class="filter_power_title">Фильтры</div>
-                    <form action="#">
-                        <div>
-                            <a href="#" class="сlear_filter_btn">
-                                <div class="сlear_filter_btn_txt">Сбросить</div>
-                                <figure class="сlear_filter_btn_img"><img src="./img/Frame%2050.svg"></figure>
-                            </a>
-                        </div>
-                        <div>
-                            <ul class="filter_power__items">
-                                <li>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option1" name="selector" type="checkbox"/>
-                                        <label for="option1">1</label>
-                                    </div>
-
-                                    <div class="inputGroup">
-                                        <input class="in" id="option2" name="selector" type="checkbox"/>
-                                        <label for="option2">2</label>
-                                    </div>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option3" name="selector" type="checkbox"/>
-                                        <label class="lll" for="option3">3</label>
-                                    </div>
-
-                                    <div class="inputGroup">
-                                        <input class="in" id="option4" name="selector" type="checkbox"/>
-                                        <label for="option4">4</label>
-                                    </div>
-                                    <div class="inputGroup">
-                                        <input class="in" id="option5" name="selector" type="checkbox"/>
-                                        <label for="option5">5</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-        <div class="mainblock">
+        </header>
+        <div class="mainblock for_cantload">
         <div class="not_found_trainer__img">
             <img src="img/Frame%20109.svg">
         </div>
-        <div class="not_found_trainer__txt">Не удалось загрузить данные</div>
-        <div class="not_found_trainer__txt2">Попробуйте зайти через несколько минут или обновите страницу</div>
+        <div class="not_found_trainer__txt for_cantload">Не удалось загрузить данные</div>
+        <div class="not_found_trainer__txt2 for_cantload">Попробуйте зайти через несколько минут или обновите страницу</div>
+    </div>
+        <div class="parent__bottom_line">
+            <div class="bottom_line for_cantload"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_docs">
+            <a href="#" class="footer_docs_btn">
+                <figure class="footer_docs_btn_img"><img src="./img/file-text.svg"></figure>
+                <div class="footer_docs_btn_txt">Документация</div>
+            </a>
+        </div>
+        <div class="QA_ver">
+            <div class="QAStudio">
+                <div class="QA">QA</div>
+                <div class="Studio">Studio</div>
+            </div>
+            <div class="version">v1.05</div>
+        </div>
+        <div class="footer_rules">
+            <a href="#" class="footer_rules_btn">
+                <figure class="footer_rules_btn_img"><img src="./img/scroll.svg"></figure>
+                <div class="footer_rules_btn_txt">Правила игры</div>
+            </a>
+        </div>
     </div>
     <div class="parent_gradient_background">
         <div class="gradient_background"></div>

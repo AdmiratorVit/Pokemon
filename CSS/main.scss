@@ -4,17 +4,19 @@
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body{
+body, html {
   background: #f8f8f8;
+  height: 100%;
 }
 
-.no_scroll{
+.no_scroll {
   overflow: hidden;
 }
 
@@ -24,9 +26,12 @@ body{
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-  .parent {
-    justify-content: center;
-  }
+  //.parent {
+  //  justify-content: center;
+  //  display: flex;
+  //  flex-direction: column;
+  //  min-height: 100%;
+  //}
   .parent__block1 {
     position: relative;
     width: 1280px;
@@ -38,7 +43,7 @@ body{
   }
   .parent__block1_logo {
     position: absolute;
-    top: calc(0.088*100vh);
+    top: calc(0.088 * 100vh);
     background: linear-gradient(42.24deg, #ED6F2D 13.34%, #FFD600 106.42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,7 +54,7 @@ body{
     width: 476px;
     //left: 528px;
     //top: 157px;
-    top: calc(0.162*100vh);
+    top: calc(0.162 * 100vh);
     font-family: "Pokemon Classic", serif;
     font-style: normal;
     font-weight: 600;
@@ -70,7 +75,7 @@ body{
     position: absolute;
     //left: 563px;
     //top: 430px;
-    top: calc(0.57*100vh);
+    top: calc(0.57 * 100vh);
     background: #FFFFFF;
     border-radius: 40px;
     z-index: 2;
@@ -146,8 +151,7 @@ body{
   }
 
 
-
-  .header{
+  .header {
     width: 1276px;
     position: relative;
     display: flex;
@@ -159,14 +163,14 @@ body{
     padding: 0 40px 0 40px;
   }
 
-  .top_menu{
+  .top_menu {
     width: 100%;
     display: flex;
     flex-direction: row;
     //height: 48px;
   }
 
-  .top_menu_logo{
+  .top_menu_logo {
     width: 60px;
     height: 60px;
     background: #FFFFFF;
@@ -175,7 +179,7 @@ body{
     padding: 15px;
   }
 
-  .top_menu_pokemons{
+  .top_menu_pokemons {
     width: 175px;
     height: 60px;
     background: #ffffff;
@@ -188,23 +192,26 @@ body{
     margin-left: 5px;
     display: flex;
     align-items: center;
+    border: #ffffff solid 1px;
 
   }
 
-  .top_menu_pokemons_btn{
+
+
+  .top_menu_pokemons_btn {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    position: absolute;
+    position: relative;
     background: #ffffff;
     border-radius: 15px;
     flex-grow: 0;
     width: 175px;
-    height: 60px;
-    border: #ffffff solid 1px;
+    height: 58px;
+
     left: 0;
     padding-left: 15px;
     cursor: pointer;
@@ -212,19 +219,19 @@ body{
     align-items: center;
     text-decoration: none;
   }
-  .top_menu_pokemons_btn:hover{
+  .top_menu_pokemons:hover {
     border: #ED6F2D solid 1px;
   }
 
 
-  .top_menu_pokemons_btn_img{
+  .top_menu_pokemons_btn_img {
     left: 15px;
   }
-  .top_menu_pokemons_btn_txt{
+  .top_menu_pokemons_btn_txt {
     margin-left: 15px;
   }
 
-  .top_menu_exit_btn{
+  .top_menu_exit_btn {
     width: 60px;
     height: 60px;
     background: #FFFFFF;
@@ -235,13 +242,13 @@ body{
     right: 40px;
   }
 
-  .top_menu_id{
+  .top_menu_id {
     position: absolute;
     right: 122px;
     top: 21px;
   }
 
-  .id_txt{
+  .id_txt {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -250,7 +257,7 @@ body{
     color: #000000;
     opacity: 0.4;
   }
-  .id_number{
+  .id_number {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -264,7 +271,7 @@ body{
     display: flex;
   }
 
-  .sub_menu_title{
+  .sub_menu_title {
     position: absolute;
     width: 295px;
     height: 62px;
@@ -278,7 +285,7 @@ body{
     color: #000000;
   }
 
-  .sub_menu_search{
+  .sub_menu_search {
     width: 232px;
     height: 48px;
     margin-left: 370px;
@@ -287,7 +294,7 @@ body{
     position: relative;
   }
 
-  #search{
+  #search {
     display: flex;
     padding: 4px 16px 4px 45px;
     width: 232px;
@@ -307,13 +314,13 @@ body{
     font-feature-settings: 'case' on;
   }
 
-  .sub_menu_search_img{
+  .sub_menu_search_img {
     position: absolute;
     top: 14px;
     left: 13px;
   }
 
-  .parent__mainblock_load_more{
+  .parent__mainblock_load_more {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -321,7 +328,7 @@ body{
     margin-top: 30px;
   }
 
-  .parent__mainblock_load_more_button{
+  .parent__mainblock_load_more_button {
     width: 178px;
     height: 48px;
     background: #ED6F2D;
@@ -340,15 +347,14 @@ body{
   }
 
 
-
-  .parent__bottom_line{
+  .parent__bottom_line {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
 
-  .bottom_line{
+  .bottom_line {
     margin: 75px 0 38px 0;
     padding: 0;
     width: 1200px;
@@ -357,15 +363,16 @@ body{
     border-top: 2px solid #ffffff;
   }
 
-  .footer{
+  .footer {
     display: flex;
     justify-content: space-between;
     height: 100px;
     margin: 0 auto;
     width: 1276px;
+    flex: 0 0 auto;
   }
 
-  .footer_docs_btn{
+  .footer_docs_btn {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -386,19 +393,19 @@ body{
     text-decoration: none;
     margin-left: 40px;
   }
-  .footer_docs_btn:hover{
+  .footer_docs_btn:hover {
     border: #ED6F2D solid 1px;
   }
 
 
-  .footer_docs_btn_img{
+  .footer_docs_btn_img {
     left: 15px;
   }
-  .footer_docs_btn_txt{
+  .footer_docs_btn_txt {
     margin-left: 15px;
   }
 
-  .footer_rules_btn{
+  .footer_rules_btn {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -419,25 +426,25 @@ body{
     text-decoration: none;
     margin-right: 38px;
   }
-  .footer_rules_btn:hover{
+  .footer_rules_btn:hover {
     border: #ED6F2D solid 1px;
   }
 
 
-  .footer_rules_btn_img{
+  .footer_rules_btn_img {
     margin-left: 11px;
   }
-  .footer_rules_btn_txt{
+  .footer_rules_btn_txt {
     margin-left: 15px;
   }
-  .QAStudio{
+  .QAStudio {
     width: 115px;
     height: 29px;
     display: flex;
     margin: 18px 0 0 0;
     column-gap: 7px;
   }
-  .QA{
+  .QA {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -445,7 +452,7 @@ body{
     line-height: 29px;
     color: #ED6F2D;
   }
-  .Studio{
+  .Studio {
     font-family: Inter, serif;
     font-style: normal;
     font-weight: 500;
@@ -454,7 +461,7 @@ body{
     color: #222222;
   }
 
-  .parent_gradient_background{
+  .parent_gradient_background {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -466,6 +473,1165 @@ body{
     z-index: -2;
   }
 
-  .Empty{opacity: 0.2}
+  .Empty {
+    opacity: 0.2
+  }
+  /* Trainers scss */
+  /* Desktop */
+  //@media screen and (min-width: 1280px){
+  //}
+
+  @font-face {
+    font-family: Pokemon Classic;
+    src: url(../fonts/PokemonClassic.woff2) format('woff2'),
+    url(../fonts/PokemonClassic.woff2) format('woff'),
+    url(../fonts/PokemonClassic.woff2) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background: #f8f8f8;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: #ffffff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #ED6F2D;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    background-color: #ffffff;
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1280px) {
+    //.parent {
+    //  justify-content: center;
+    //}
+    .parent__block1 {
+      position: relative;
+      //border: solid red 1px;
+      width: 1276px;
+      height: 832px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .parent__block1_logo {
+      position: absolute;
+      width: 252px;
+      height: 244px;
+      left: 523px;
+      top: 124px;
+
+      background: linear-gradient(42.24deg, #ED6F2D 13.34%, #FFD600 106.42%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 2;
+    }
+
+    .parent__block1_title {
+      position: absolute;
+      width: 476px;
+      height: 110px;
+      left: 401px;
+      top: 193px;
+      font-family: "Pokemon Classic", serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55.1051px;
+      line-height: 100%;
+      /* or 55px */
+      text-align: center;
+      color: #000000;
+      z-index: 3;
+    }
+
+    .parent__block1_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 40px;
+      gap: 30px;
+      position: absolute;
+      width: 407px;
+      height: 275px;
+      left: 435px;
+      top: 466px;
+      background: #FFFFFF;
+      border-radius: 40px;
+      z-index: 2;
+    }
+
+    .parent__block1_form_title {
+      width: 227px;
+      height: 29px;
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      flex: none;
+      flex-grow: 0;
+    }
+
+    #id_trainer_form {
+      width: 327px;
+      height: 48px;
+      background: #FFFFFF;
+      border: 1px solid #E3E5E6;
+      border-radius: 8px;
+      flex: none;
+      flex-grow: 0;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      top: calc(50% - 16px / 2);
+      padding-left: 15px;
+      //margin: 25px 0;
+    }
+
+    .submit_authorization {
+      width: 327px;
+      height: 48px;
+      background: #ED6F2D;
+      border-radius: 48px;
+      flex: none;
+      flex-grow: 0;
+      border: none;
+      color: white;
+      font-family: 'Inter', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+
+
+    .gradient_background {
+      position: absolute;
+      width: 100%;
+      height: 1199px;
+      left: 45px;
+      top: 176px;
+
+      background: radial-gradient(59.88% 59.88% at 50% 50%, #F05828 0%, #F7C615 44.27%, #FFDD65 73.96%, #FFE382 80.73%, #FFFFFF 100%);
+      filter: blur(169.663px);
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    /*Меню фильтра ПРАВОЕ*/
+
+    #menuToggle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px;
+      gap: 2px;
+      width: 48px;
+      height: 48px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      justify-content: center;
+      margin-left: 7px;
+    }
+    /*Меню фильтра ПРАВОЕ чекбокс*/
+    #menuToggle > input {
+      display: flex;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    #menuToggle input:checked ~ #filter_power {
+      display: flex;
+    }
+
+    .menuToggle_badge {
+      width: 18px;
+      height: 18px;
+      background-color: #ED6F2D;
+      font-family: Inter, serif;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: -0.07999999821186066px;
+      text-align: center;
+      color: white;
+      right: 32px;
+      border-radius: 15px;
+      position: absolute;
+      bottom: 35px;
+    }
+
+    .menuToggle_badge.disabled {
+      display: none;
+    }
+
+    .checkbox_figure {
+      background-image: url(../img/sliders-horizontal.svg);
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /*конец меню фильтра*/
+
+    /* меню силы (левое)*/
+    #menuToggle__sorting_power {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 0 12px 14px;
+      width: 213px;
+      height: 48px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      margin-left: 315px;
+
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #090A0A;
+    }
+
+    #menuToggle__sorting_power > input {
+      display: flex;
+      width: 197px;
+      height: 43px;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      transform: translateX(-7px);
+    }
+
+    /* меню силы (левое). Чекбокс*/
+    #menuToggle__sorting_power input:checked ~ #sorting_power {
+      //  transform: translate(-39px, -37px);
+      //  background: #FFFFFF;
+      display: flex;
+    }
+
+    #menuToggle__sorting_power input:checked ~ .checkbox_power_figure {
+      transform: rotate(180deg);
+    }
+
+
+    .checkbox_power_figure {
+      background-image: url(../img/Vector.svg);
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-position: center;
+      //transform: rotate(180deg);
+    }
+
+    .menu_title {
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      color: #222222;
+    }
+
+    .filter_label {
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: #222222;
+    }
+    /* конец меню силы*/
+
+
+    .parent__mainblock {
+      width: 1276px;
+      display: grid;
+      grid-template-columns: repeat(3, 389px);
+      column-gap: 16px;
+      row-gap: 53px;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 99px;
+      padding: 0 40px 0 40px;
+    }
+
+    .parent__mainblock_card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //padding: 0 30px 24px;
+      gap: 30px;
+      width: 389px;
+      height: 193px;
+      background: #ffffff;
+      backdrop-filter: blur(50px);
+      /* Note: backdrop-filter has minimal browser support */
+      border-radius: 40px;
+    }
+
+    .parent__mainblock_card_img {
+      position: absolute;
+      width: 103px;
+      height: 197px;
+      left: 0;
+      top: -32px;
+      display: flex;
+      justify-content: center;
+      padding-left: 24px;
+    }
+    .parent__mainblock_card_name {
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #222222;
+      position: absolute;
+      top: 38px;
+      left: 122px;
+    }
+  }
+
+  .parent__mainblock_card_levels {
+    display: flex;
+    position: absolute;
+    top: 83px;
+    left: 121px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 20px;
+    width: 99px;
+    height: 32px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .parent__mainblock_card_pokemonsqnt {
+    display: flex;
+    position: absolute;
+    top: 83px;
+    left: 232px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 20px;
+    width: 102px;
+    height: 34px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .parent__mainblock_card_parameters_power {
+    border-radius: 20px;
+    width: 76px;
+    height: 33px;
+    padding: 7px 0 0 0;
+    text-align: center;
+  }
+
+  .parent__mainblock_card_trainer_id {
+    display: flex;
+    column-gap: 9px;
+    position: absolute;
+    top: 148px;
+    left: 122px;
+  }
+
+  .parent__mainblock_card_trainer_id_number {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+
+  .parent__mainblock_card_trainer_id_copy {
+    cursor: pointer;
+  }
+
+  .level1 {
+    color: #45D221;
+    border: 1px solid #45D221;
+  }
+
+  .level2 {
+    color: #BB2DED;
+    border: 1px solid #BB2DED;
+  }
+
+  .level3plus {
+    color: #ED2D2D;
+    border: 1px solid #ED2D2D;
+  }
+
+  .qnt0 {
+    div {
+      opacity: 0.2;
+    }
+  }
+
+  .qnt1 {
+    div:nth-of-type(2) {
+      opacity: 0.2;
+    }
+
+    div:nth-of-type(3) {
+      opacity: 0.2;
+    }
+  }
+
+  .qnt2 {
+    div:nth-of-type(3) {
+      opacity: 0.2;
+    }
+  }
+
+
+  .disabled_card {
+    color: #607D8B;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  .disabled_card_border {
+    border: 1px solid #607D8B;
+  }
+
+  .disabled_card_base {
+    backdrop-filter: blur(50px);
+    opacity: 0.6;
+  }
+  ///////////////
+
+  /* меню силы (левое)*/
+    #menuToggle__sorting_power1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0 12px 14px;
+    width: 213px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 315px;
+
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #090A0A;
+  }
+
+  #menuToggle__sorting_power1 > input {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  /* меню силы (левое). Чекбокс*/
+  #menuToggle__sorting_power1 input:checked ~ #sorting_power1 {
+
+    display: flex;
+  }
+
+  #menuToggle__sorting_power1 input:checked ~ .checkbox_power_figure1 {
+    transform: rotate(180deg);
+  }
+
+  .checkbox_power_figure1 {
+    background-image: url(../img/Vector.svg);
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    //transform: rotate(180deg);
+  }
+
+  ////////////////
+  ///////////////
+
+  /* меню силы (левое)*/
+  #menuToggle__sorting_power1pok {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0 12px 14px;
+    width: 213px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 315px;
+
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #090A0A;
+  }
+
+  #menuToggle__sorting_power1pok > input {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  /* меню силы (левое). Чекбокс*/
+  #menuToggle__sorting_power1pok input:checked ~ #sorting_power1pok {
+
+    display: flex;
+  }
+
+  #menuToggle__sorting_power1pok input:checked ~ .checkbox_power_figure1pok {
+    transform: rotate(180deg);
+  }
+
+  .checkbox_power_figure1pok {
+    background-image: url(../img/Vector.svg);
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    //transform: rotate(180deg);
+  }
+
+  body {
+    background: #f8f8f8;
+  }
+
+  /*Меню выпадающего фильтра ПРАВОГО*/
+  /*Filter scss*/
+  #filter_power {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    width: 288px;
+    height: 181px;
+    left: 952px;
+    top: 214px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 27px 0 0 14px;
+  }
+  .filter_power_pokenmon {
+    height: 275px !important;
+
+  }
+
+  .filter_power_title {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #222222;
+    margin-left: 10px;
+  }
+
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'] {
+      --active: #ED6F2D;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, .3);
+      --border: #ffffff;
+      --border-hover: #275EFE;
+      --background: #E9E9EB;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E9E9EB;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background .3s, border-color .3s, box-shadow .2s;
+
+      &:after {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        //transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+      }
+
+      &:checked {
+        --b: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+      }
+
+      &:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: .9;
+
+        &:checked {
+          --b: var(--disabled-inner);
+          --bc: var(--border);
+        }
+
+        & + label {
+          cursor: not-allowed;
+        }
+      }
+
+      &:not(.switch) {
+        width: 21px;
+
+        &:after {
+          opacity: var(--o, 0);
+        }
+
+        &:checked {
+          --o: 1;
+        }
+      }
+
+      & + label {
+        font-size: 14px;
+        line-height: 29px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        //margin-left: 4px;
+      }
+    }
+    input[type='checkbox'] {
+      &:not(.switch) {
+        border-radius: 7px;
+
+        &:after {
+          width: 5px;
+          height: 9px;
+          border: 2px solid var(--active-inner);
+          border-top: 0;
+          border-left: 0;
+          left: 7px;
+          top: 4px;
+          transform: rotate(var(--r, 20deg));
+        }
+
+        &:checked {
+          --r: 43deg;
+        }
+      }
+
+      &.switch {
+        width: 51px;
+        height: 31px;
+        border-radius: 100px;
+
+        &:after {
+          left: 2px;
+          top: 2px;
+          border-radius: 50%;
+          width: 27px;
+          height: 25px;
+          background: var(--ab, var(--border));
+          transform: translateX(var(--x, 0));
+        }
+
+        &:checked {
+          --ab: var(--active-inner);
+          --x: 17px;
+        }
+
+        &:disabled {
+          &:not(:checked) {
+            &:after {
+              opacity: .6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Demo
+
+
+  .filter_power__items {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    width: 235px;
+    max-width: 320px;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 44px;
+    /* identical to box height, or 100% */
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    li {
+      //margin: 16px 0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      border-bottom: 1px solid #EEEEEF;
+      padding: 10px 1px;
+      overflow: hidden;
+    }
+  }
+
+  .filter_power__items li:first-child {
+    border: solid 1px #EEEEEF;
+    border-radius: 8px;
+    background-color: #EEEEEF;
+    padding: 1px;
+  }
+
+
+  .filter_power__items li:last-child {
+    border-bottom: none;
+  }
+
+  .inputGroup {
+    background-color: #EEEEEF;
+    display: flex;
+    /*margin: 10px 0;*/
+    position: relative;
+    width: 44px;
+    height: 28px;
+
+    input {
+      //height: 32px;
+      order: 1;
+      z-index: 2;
+      position: absolute !important;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      visibility: hidden;
+    }
+  }
+
+  .inputGroup label {
+    /*padding: 12px 30px;*/
+    width: 100%;
+    display: block;
+    //text-align: left;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 200ms ease-in;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  .inputGroup label:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+    background-color: #ED6F2D;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    opacity: 0;
+    z-index: -1;
+  }
+
+
+  .inputGroup label:after {
+    width: 32px;
+    height: 32px;
+    content: '';
+
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+  }
+
+  .in:checked ~ label:before {
+    transform: translate(-50%, -50%) scale3d(56, 56, 1);
+    opacity: 1;
+  }
+
+  .сlear_filter {
+    width: 175px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 15px;
+    flex-grow: 0;
+    padding: 15px;
+    position: relative;
+    left: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .сlear_filter_btn {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    position: absolute;
+    background: #ED6F2D;
+    border-radius: 15px;
+    flex-grow: 0;
+    width: 94px;
+    height: 24px;
+    border: #ED6F2D solid 1px;
+    /* left: 0; */
+    /* padding-left: 15px; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    right: 28px;
+    top: 29px;
+  }
+  .сlear_filter_btn:hover {
+    border: #ED6F2D solid 1px;
+  }
+
+
+  .сlear_filter_btn_img {
+    margin-top: 4px;
+  }
+  .сlear_filter_btn_txt {
+    margin-left: 10px;
+    margin-right: 4px;
+  }
+
+  /* Desktop */
+  //sorting_power.css
+  //@media screen and (min-width: 1280px){
+  //}
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background: #f8f8f8;
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1280px) {
+
+
+    /*Меню фильтра*/
+
+    #sorting_power {
+      //display: flex;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      position: absolute;
+      width: 288px;
+      height: 274px;
+      left: 281px;
+      top: 214px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+      border-radius: 30px;
+      padding: 27px 0 0 14px;
+    }
+
+    .sorting_power_title {
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      color: #222222;
+      margin-left: 10px;
+    }
+
+    @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+      input[type='radio'] {
+        --active: #ED6F2D;
+        --active-inner: #fff;
+        //--focus: 2px #ED6F2D;
+        --border: 8px solid #ED6F2D;
+        //--border-hover: #ED6F2D;
+        --background: #E9E9EB;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 32px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        transition: background .3s, border-color .3s, box-shadow .2s;
+
+        &:after {
+          content: '';
+          display: block;
+          left: -1px;
+          top: -1px;
+          position: absolute;
+          //transition: transform var(--d-t,  .3s) var(--d-t-e, ease), opacity var(--d-o, .2s);
+        }
+
+        &:checked {
+          --b: var(--active);
+          --bc: var(--active);
+          --d-o: .3s;
+          --d-t: .6s;
+          --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+        }
+
+        &:disabled {
+          --b: var(--disabled);
+          cursor: not-allowed;
+          opacity: .9;
+
+          &:checked {
+            --b: var(--disabled-inner);
+            --bc: var(--border);
+          }
+
+          & + label {
+            cursor: not-allowed;
+          }
+        }
+
+        &:hover {
+          &:not(:checked) {
+            &:not(:disabled) {
+              --bc: var(--border-hover);
+            }
+          }
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 var(--focus);
+        }
+
+        &:not(.switch) {
+          width: 32px;
+
+          &:after {
+            opacity: var(--o, 0);
+          }
+
+          &:checked {
+            --o: 1;
+          }
+        }
+
+        & + label {
+          font-size: 14px;
+          line-height: 21px;
+          display: inline-block;
+          vertical-align: top;
+          cursor: pointer;
+          margin-left: 4px;
+        }
+      }
+      input[type='radio'] {
+        border-radius: 50%;
+
+        &:after {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: var(--active-inner);
+          opacity: 0;
+          transform: scale(var(--s, .7));
+        }
+
+        &:checked {
+          --s: .5;
+        }
+      }
+    }
+
+    .sorting_power__items {
+      padding: 10px 0 0 12px;
+      list-style: none;
+      width: 250px;
+      max-width: 320px;
+
+      font-family: Inter, serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 63px;
+      /* identical to box height, or 100% */
+      color: #222222;
+
+      li {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(120, 120, 128, 0.16);
+      }
+    }
+  }
+
+
+  //.sorting_power__items li:first-child {
+  //  padding: 0px 0 8px 0;
+  //  margin: 17px 0 5px 0;
+  //}
+  //.sorting_power__items li:nth-child(2) {
+  //  padding: 0px 0 8px 0;
+  //}
+  .sorting_power__items li:last-child {
+    border-bottom: none;
+  }
+
+  //not_found.scss
+
+  body {
+    background: #f8f8f8;
+  }
+
+  .mainblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 162px;
+    flex: 1 0 auto;
+  }
+
+  .not_found_trainer__txt {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: #222222;
+    margin-top: 21px;
+  }
+
+  .not_found_trainer__txt2 {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #222222;
+    margin-top: 17px;
+  }
+  .QA_ver{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .version{
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    opacity: 0.5;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex: 0 0 auto;
+  }
+
 
 }
